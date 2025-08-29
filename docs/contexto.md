@@ -73,8 +73,43 @@ Enumere as restrições à sua solução. Lembre-se de que as restrições geral
 > - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
 
 # Catálogo de Serviços
+Aplicação desenvolvida com **Next.js** (front-end), **Node.js + TypeScript** (back-end) e banco de dados gratuito (**Supabase, Railway ou PlanetScale**), com hospedagem na **Vercel**.
 
-Descreva aqui todos os serviços que serão disponibilizados pelo seu projeto, detalhando suas características e funcionalidades.
+---
+
+## Serviços Principais
+
+### 1. Cadastro e Autenticação
+- Registro e login de usuários (clientes e administradores).
+- Autenticação segura com **JWT**.
+
+- Armazenamento de credenciais e dados no banco de dados.
+
+### 2. Catálogo de Produtos
+- Listagem e detalhamento de produtos (nome, descrição, preço, estoque, imagens).
+- Filtros por categoria e preço.
+- Gerenciamento de produtos pelo administrador.
+
+### 3. Carrinho de Compras
+- Adição, remoção e atualização de produtos.
+
+- Persistência do carrinho para usuários autenticados.
+
+### 4. Processamento de Pedidos
+- Criação e gestão de pedidos.
+- Atualização de status (pendente, pago, enviado, entregue).
+- Histórico de pedidos para clientes.
+
+### 5. Administração e Gestão 
+- Painel administrativo para produtos, pedidos e usuários.
+- Relatórios de vendas e controle de estoque.
+- Gerenciamento de permissões.
+
+## Observações Técnicas
+- **Deploy automático:** a cada push no GitHub, a Vercel realiza o deploy contínuo da aplicação.
+- **Serverless:** não há acesso direto a servidores ou containers; escalabilidade e disponibilidade são gerenciadas pela plataforma.
+- **Variáveis de ambiente:** configuradas diretamente na Vercel, garantindo segurança das credenciais e integrações.
+
 
 # Arquitetura da Solução
 
