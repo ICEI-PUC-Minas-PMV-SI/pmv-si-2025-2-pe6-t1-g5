@@ -53,7 +53,7 @@ O objetido dessa priorização é ter um produto mínimo viável (PMV) que possa
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
 |RNF-001| A aplicação deve ser de fácil entendimento para o usuário consumidor, sendo o objetivo final do sistema a compra de produtos desejados de maneira rápida e sem entraves.  | ALTA | 
-|RNF-002| O tempo de resposta da aplicação deve ser de , no mínimo, 100ms. |  MÉDIA | 
+|RNF-002| O tempo de resposta da aplicação deve ser de, no mínimo, 100ms. |  MÉDIA | 
 |RNF-003| A aplicação deve ser disponibilizada tanto para web quanto para mobile.  |  ALTA | 
 |RNF-004| A aplicação deve ser segura, usando as boas práticas de segurança e não abrindo brechas de vazamento de dados de usuários. |  ALTA | 
 |RNF-005| A aplicação deve ser escalável de maneira que possa atender eventuais picos e se adaptar a um constante crescimento de seus usuários. |  MÉDIA | 
@@ -67,9 +67,8 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
+|02| Apesar de ser escalável, o projeto deve ter custo zero durante o desenvolvimento. Isso difere do custo de manter o projeto em produção a longo prazo, que deve ser mantido baixo.        |
+|03| O projeto deve se limitar a venda de produtos de tecnologia como computadores, placas de vídeo, etc...        |
 
 > **Links Úteis**:
 > - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
