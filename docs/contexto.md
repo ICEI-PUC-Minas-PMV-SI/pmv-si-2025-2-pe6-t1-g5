@@ -95,27 +95,27 @@ A hospedagem da aplicação foi realizada na plataforma Vercel, escolhida por su
 
 O fluxo de hospedagem ocorre da seguinte forma:
 
-1.O código-fonte da aplicação é versionado em um repositório no GitHub.
+- O código-fonte da aplicação é versionado em um repositório no GitHub.
 
-2.O repositório é integrado diretamente à Vercel, permitindo que a cada novo push seja gerado automaticamente um novo deploy.
+- O repositório é integrado diretamente à Vercel, permitindo que a cada novo push seja gerado automaticamente um novo deploy.
 
-3.O deploy contínuo (CI/CD) é configurado pela própria plataforma, dispensando a necessidade de acesso via SSH ou gerenciamento manual de servidores, como seria necessário em ambientes tradicionais (ex.: AWS EC2).
+- O deploy contínuo (CI/CD) é configurado pela própria plataforma, dispensando a necessidade de acesso via SSH ou gerenciamento manual de servidores, como seria necessário em ambientes tradicionais (ex.: AWS EC2).
 
-4.Variáveis de ambiente (como chaves de API e credenciais de banco de dados, ex.: Supabase, Railway ou PlanetScale) são definidas no painel da Vercel, garantindo segurança e isolamento de informações sensíveis.
+- Variáveis de ambiente (como chaves de API e credenciais de banco de dados, ex.: Supabase, Railway ou PlanetScale) são definidas no painel da Vercel, garantindo segurança e isolamento de informações sensíveis.
 
 A Vercel gera automaticamente uma URL pública para a aplicação (ex.: https://nomedoprojeto.vercel.app), além da possibilidade de vincular domínios personalizados.
 
 Benefícios da Hospedagem na Vercel
 
-1.Deploys rápidos e automatizados a partir do GitHub.
+- Deploys rápidos e automatizados a partir do GitHub.
 
-2.Integração nativa com Next.js, otimizando performance.
+- Integração nativa com Next.js, otimizando performance.
 
-3.Ambiente serverless, eliminando a necessidade de configuração manual de servidores ou containers.
+- Ambiente serverless, eliminando a necessidade de configuração manual de servidores ou containers.
 
-4.Escalabilidade automática conforme a demanda de acessos.
+- Escalabilidade automática conforme a demanda de acessos.
 
-5.Monitoramento simplificado de logs e status da aplicação via painel da Vercel.
+- Monitoramento simplificado de logs e status da aplicação via painel da Vercel.
 
 # Planejamento
 
