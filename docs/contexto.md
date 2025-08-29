@@ -26,36 +26,39 @@ O público-alvo da aplicação inclui consumidores com perfil tecnológico, inte
 
 ## Requisitos
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto. Para determinar a prioridade de requisitos, aplicar uma técnica de priorização de requisitos e detalhar como a técnica foi aplicada.
+As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
+
+A priorização dos requisitos foram determinadas a partir do que é considerado essencial para o funcionamento mínimo da plataforma. Desse modo, prioridade ALTA é o que é considerado essencial e BAIXA são funcionalidades adicionais que podem serem implentadas mais tarde no desenvolvimento.
+
+O objetido dessa priorização é ter um produto mínimo viável (PMV) que possa atingir os escopos do projeto de maneira satisfatória o mais rápido possível.
 
 ### Requisitos Funcionais
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001| CRUD de usuário, sendo esse mesmo podendo ser administrador ou normal. Isso inclui cadastro de usuário externo como também criação de contas de admin | ALTA | 
+|RF-002| CRUD de items a serem vendidos, que é gerenciado por usuários administradores por um painel, levando em conta inventários dos mesmos   | ALTA |
+|RF-003| Um usuário que comprou um item pode deixar um review no mesmo.   | BAIXA |
+|RF-004| Um usuário pode buscar dentro da aplicação por items desejados, sendo essa busca tanto por filtros quando por similaridade de texto.   | ALTA |
+|RF-005| Um usuário pode criar um carrinho de compras com os items desejados e ir ao checkout. O carrinho deve levar em consideração o inventário de items, notificando o usuário caso hajam mudanças pertinentes (EX: estoque acabou).   | ALTA |
+|RF-006| Um usuário pode pagar a sua compra usando o(s) provedor(es) de pagamento   | ALTA |
+|RF-007| O usuário deve ser notificado quanto sua transação for concluída   | MÉDIA |
+|RF-008| O usuário deve ser capaz de ver suas compras, incluindo status e localização.    | MÉDIA |
+|RF-009| Um usuário administrador deve ser capaz de gerar relatórios de vendas do sistema.   | BAIXA |
+|RF-010| Um usuário administrador deve ser capaz de cadastrar outros usuários administradores.    | BAIXA |
+|RF-011| Um usuário administrador deve ser capaz de administrar a contas e pedidos de usuários comuns para lidar com eventuais problemas, esses alterações devem possuir rastreabilidade.    | BAIXA |
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
-
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+|RNF-001| A aplicação deve ser de fácil entendimento para o usuário consumidor, sendo o objetivo final do sistema a compra de produtos desejados de maneira rápida e sem entraves.  | ALTA | 
+|RNF-002| O tempo de resposta da aplicação deve ser de , no mínimo, 100ms. |  MÉDIA | 
+|RNF-003| A aplicação deve ser disponibilizada tanto para web quanto para mobile.  |  ALTA | 
+|RNF-004| A aplicação deve ser segura, usando as boas práticas de segurança e não abrindo brechas de vazamento de dados de usuários. |  ALTA | 
+|RNF-005| A aplicação deve ser escalável de maneira que possa atender eventuais picos e se adaptar a um constante crescimento de seus usuários. |  MÉDIA | 
+|RNF-006| A aplicação deve ter um uptime de 95% ao ano.  |  MÉDIA | 
+|RNF-007| A aplicação deve ser de fácil manutenção tanto para corrigir erros quanto para extender suas funcionalidades. |  MÉDIA | 
 
 ## Restrições
 
