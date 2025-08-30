@@ -122,9 +122,23 @@ Definição de como o software é estruturado em termos dos componentes que faze
 
 ## Tecnologias Utilizadas
 
-Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
+### Diagrama da stack proposta:
 
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
+![stack_proj_pucminas_6 (3)](https://github.com/user-attachments/assets/b44d6572-f319-498b-8e74-3ac8b5d06480)
+
+### Descrição da stack e do desenvolvimento:
+
+No front-end intentasse utilizar React com ou sem o uso de ferramentas como TailwindCSS, Material UI ou Bootstrap com a intenção de trazer maior padronização e produtividade no desenvolvimento. Na parte mobile objetivasse desenvolver a aplicação com React Native dada a popularidade e a maturidade desse framework. Em ambas as aplicações de UI Web e de UI Mobile o objetivo é usar a língua de programação TypeScript pela grande integração com a runtime Node.js (fundamental para React e React Native) e pela resiliência à erros com o apoio da forte tipagem oferecida. Quanto ao desenvolvimento das APIs que serão chamadas pelas aplicações de UI intentasse usar C# com o apoio do framework .NET usando Swagger como ferramenta de documentação e padronização. Na camada de persistência usar Supabase que na prática significará, para o desenvolvimento, um banco de dados relacional dentro dos padrões do PostgreSQL.
+
+Quanto ao deploy o serviço de aplicações estáticas como o UI será feito com o Vercel, já as APIs com Docker em máquinas virtuais e o banco administrado via Supabase.
+
+O desenvolvimento poderá ser feito com o apoio da IDE de preferência do desenvolvedor, sendo crucial, no contexto das APIs que apoiam o UI, ter disciplina em desenvolver e testar a execução das aplicações em formato containerizado padrão utilizando Docker para evitar questões de compatibilidade.
+
+Quanto ao fluxo de desenvolvimento há o objetivo de separar cada serviço em diferentes repositórios no GitHub seguindo o padrão Conventional Commits nas mensagens de commit, a criação de forks indivuais, a criação de pull requests e a revisão para o merge. Fluxo importante para garantir um histórico claro e saudável das contribuições feitas por cada desenvolvedor, evitar bugs e integrar todo o time de desenvolvimento nas atividades sendo feitas pelos colegas com as revisões, e, por fim, evitar a perda de rastreabilidade de contribuições que apresentem erros ao longo do ciclo de vida do software. 
+
+### Jornada do usuário:
+
+
 
 ## Hospedagem
 
