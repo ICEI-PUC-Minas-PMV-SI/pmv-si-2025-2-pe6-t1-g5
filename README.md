@@ -1,4 +1,4 @@
-# TÍTULO DO PROJETO
+# E-commerce TeraBum
 
 `CURSO: Sistemas de Informação`
 
@@ -6,7 +6,8 @@
 
 `SEMESTRE: 6º`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Neste repositório se encontra a documentação e o código fonte do serviço de e-commerce TeraBum que
+opera na área de venda de artigos eletrônicos.
 
 ## Integrantes
 
