@@ -120,10 +120,8 @@ Nosso e-commerce oferece um conjunto de funcionalidades que garantem praticidade
 
 # Arquitetura da Solução
 
-Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
-
-![arq](https://github.com/user-attachments/assets/b9402e05-8445-47c3-9d47-f11696e38a3d)
-
+Arquitetura é organizada, à nível de UI, com serviço de hospedagem de arquivos estáticos com Vercel. APIs organizadas em diferentes micro serviços hospedadas em uma máquina virtual com Docker. Nginx como o gateway das requisições que os usuários farão e o Supabase como provedor de banco de dados. 
+![arquitetura (1)](https://github.com/user-attachments/assets/e5540ced-0d10-4e87-9483-47a9689b674a)
 
 ## Tecnologias Utilizadas
 
