@@ -156,9 +156,7 @@ O fluxo de hospedagem ocorre da seguinte forma:
 
 - O repositório é integrado diretamente à Vercel, permitindo que a cada novo push seja gerado automaticamente um novo deploy.
 
-- O deploy contínuo (CI/CD) é configurado pela própria plataforma, dispensando a necessidade de acesso via SSH ou gerenciamento manual de servidores, como seria necessário em ambientes tradicionais (ex.: AWS EC2).
-
-- Variáveis de ambiente (como chaves de API e credenciais de banco de dados, ex.: Supabase, Railway ou PlanetScale) são definidas no painel da Vercel, garantindo segurança e isolamento de informações sensíveis.
+- Variáveis de ambiente (como chaves de API e credenciais de banco de dados, ex.: Supabase), são definidas no painel da Vercel, garantindo segurança e isolamento de informações sensíveis.
 
 A Vercel gera automaticamente uma URL pública para a aplicação (ex.: https://nomedoprojeto.vercel.app), além da possibilidade de vincular domínios personalizados.
 
