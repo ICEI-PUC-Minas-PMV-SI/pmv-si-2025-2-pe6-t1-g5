@@ -80,32 +80,40 @@ Aplicação desenvolvida com **Next.js** (front-end), **Node.js + TypeScript** (
 ---
 
 ## Serviços Principais
+Nosso e-commerce oferece um conjunto de funcionalidades que garantem praticidade, segurança e uma boa experiência para clientes e administradores.
 
-### 1. Cadastro e Autenticação
-- Registro e login de usuários (clientes e administradores).
-- Autenticação segura com **JWT**.
+##  Cadastro e Login
+- Criação de conta de forma simples e segura.  
+- Acesso ao sistema com login e senha.  
+- Perfil personalizado com dados e histórico de compras.  
 
-- Armazenamento de credenciais e dados no banco de dados.
+---
 
-### 2. Catálogo de Produtos
-- Listagem e detalhamento de produtos (nome, descrição, preço, estoque, imagens).
-- Filtros por categoria e preço.
-- Gerenciamento de produtos pelo administrador.
+##  Catálogo de Produtos
+- Vitrine completa com descrição, preço, fotos e estoque.  
+- Filtros de busca por categoria ou faixa de preço.  
+- Navegação intuitiva para facilitar a experiência de compra.  
 
-### 3. Carrinho de Compras
-- Adição, remoção e atualização de produtos.
+---
 
-- Persistência do carrinho para usuários autenticados.
+##  Carrinho de Compras
+- Adição e remoção de itens de forma prática.  
+- Atualização de quantidades conforme a necessidade.  
+- Itens salvos no carrinho mesmo após sair da conta (usuários logados).  
 
-### 4. Processamento de Pedidos
-- Criação e gestão de pedidos.
-- Atualização de status (pendente, pago, enviado, entregue).
-- Histórico de pedidos para clientes.
+---
 
-### 5. Administração e Gestão 
-- Painel administrativo para produtos, pedidos e usuários.
-- Relatórios de vendas e controle de estoque.
-- Gerenciamento de permissões.
+##  Pedidos
+- Finalização rápida e prática da compra.  
+- Acompanhamento do status do pedido (pendente, pago, enviado e entregue).  
+- Histórico completo de pedidos anteriores.  
+
+---
+
+##  Administração (para gestores)
+- Gerenciamento de produtos, preços e estoque.  
+- Acompanhamento de pedidos e clientes em tempo real.  
+- Relatórios de vendas e dados estratégicos para o negócio.  
 
 ## Observações Técnicas
 - **Deploy automático:** a cada push no GitHub, a Vercel realiza o deploy contínuo da aplicação.
