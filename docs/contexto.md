@@ -141,7 +141,7 @@ Quanto ao fluxo de desenvolvimento há o objetivo de separar cada serviço em di
 
 ### Jornada do usuário:
 
-
+Quando o usuário acessa o domínio da TeraBum, o serviço de hospedagem do Vercel serve o UI ao passo que esse UI é carregado no navegador do usuários requisições são disparadas para a API de vitrine servir eventuais sugestões e produtos que devem já aparecer para o usuário. Caso precise fazer um login, busca ou começar a adicionar itens no carrinho os micro serviços relacionados também serão chamados pela UI servindo o necessário. Com essas interações o banco de dados do e-commerce irá atualizar com históricos de busca, compras, cadastros etc.
 
 ## Hospedagem
 
