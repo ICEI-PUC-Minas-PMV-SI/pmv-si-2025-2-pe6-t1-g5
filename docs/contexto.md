@@ -70,9 +70,6 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |02| Apesar de ser escalável, o projeto deve ter custo zero durante o desenvolvimento. Isso difere do custo de manter o projeto em produção a longo prazo, que deve ser mantido baixo.        |
 |03| O projeto deve se limitar a venda de produtos de tecnologia como computadores, placas de vídeo, etc...        |
 
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
 
 # Catálogo de Serviços
 
