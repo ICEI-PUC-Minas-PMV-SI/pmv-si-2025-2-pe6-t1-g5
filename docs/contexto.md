@@ -85,13 +85,13 @@ Nosso e-commerce oferece um conjunto de funcionalidades que garantem praticidade
 ##  Cadastro e Login
 - Criação de conta de forma simples e segura.  
 - Acesso ao sistema com login e senha.  
-- Perfil personalizado com dados e histórico de compras.  
+- Perfil personalizado com dados.  
 
 ---
 
 ##  Catálogo de Produtos
 - Vitrine completa com descrição, preço, fotos e estoque.  
-- Filtros de busca por categoria ou faixa de preço.  
+- Filtros de busca por categoria.  
 - Navegação intuitiva para facilitar a experiência de compra.  
 
 ---
@@ -103,8 +103,7 @@ Nosso e-commerce oferece um conjunto de funcionalidades que garantem praticidade
 
 ---
 
-##  Pedidos
-- Finalização rápida e prática da compra.  
+##  Pedidos  
 - Acompanhamento do status do pedido (pendente, pago, enviado e entregue).  
 - Histórico completo de pedidos anteriores.  
 
