@@ -77,10 +77,8 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 # Catálogo de Serviços
 Aplicação desenvolvida com **Next.js** (front-end), **Node.js + TypeScript** (back-end) e banco de dados gratuito (**Supabase, Railway ou PlanetScale**), com hospedagem na **Vercel**.
 
----
-
-## Serviços Principais
 Nosso e-commerce oferece um conjunto de funcionalidades que garantem praticidade, segurança e uma boa experiência para clientes e administradores.
+---
 
 ##  Cadastro e Login
 - Criação de conta de forma simples e segura.  
