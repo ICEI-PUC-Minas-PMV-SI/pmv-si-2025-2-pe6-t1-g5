@@ -75,7 +75,6 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 > - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
 
 # Catálogo de Serviços
-Aplicação desenvolvida com **Next.js** (front-end), **Node.js + TypeScript** (back-end) e banco de dados gratuito (**Supabase, Railway ou PlanetScale**), com hospedagem na **Vercel**.
 
 Nosso e-commerce oferece um conjunto de funcionalidades que garantem praticidade, segurança e uma boa experiência para clientes e administradores.
 
