@@ -201,13 +201,10 @@ Atualizado em: 01/09/2025
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
 | Lucas e Daniela | Correção dos Objetivos   | 01/09/2025     | 07/09/2025 | 📝    |     |
-| Lucas e João | Correção dos Requisitos Não Funcionais    | 07/09/2025    | 31/08/2025 | 📝    |     |
-| Lucas e Daniela | Problemas  | 24/08/2025    | 31/08/2025 | 📝    |   29/08/2025    |
-| Lucas e Daniela | Justificativa  | 24/08/2025    | 31/08/2025 | 📝    |   30/08/2025 |
-| Lucas e Daniela | Público-Alvo  | 24/08/2025    | 31/08/2025 | 📝    |   30/08/2025  |
-| João | Requisitos Funcionais  | 24/08/2025    | 31/08/2025 | 📝    |   29/08/2025  |
-| João | Requisitos Não Funcionais  | 24/08/2025    | 31/08/2025 | 📝     |   30/08/2025  |
-| João | Restrições  | 24/08/2025    | 31/08/2025 | 📝   |   30/08/2025  |
+| Lucas e João | Correção dos Requisitos Não Funcionais    | 01/09/2025    | 07/09/2025 | 📝    |     |
+| Daniela |  Correção do Catálogo de Serviços  | 01/09/2025    | 07/09/2025 | 📝    |      |
+| Grupo | Criar Slides Apresentação  | 01/09/2025    | 05/09/2025 | 📝    |    |
+
 
 Legenda:
 - ✔️: terminado
