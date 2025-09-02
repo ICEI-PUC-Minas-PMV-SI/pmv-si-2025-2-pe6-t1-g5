@@ -187,18 +187,27 @@ Atualizado em: 31/08/2025
 | João | Requisitos Funcionais  | 24/08/2025    | 31/08/2025 | ✔️     |   29/08/2025  |
 | João | Requisitos Não Funcionais  | 24/08/2025    | 31/08/2025 | ✔️     |   30/08/2025  |
 | João | Restrições  | 24/08/2025    | 31/08/2025 | ✔️     |   30/08/2025  |
+| Gabriel | Catálogo de serviços  | 24/08/2025    | 31/08/2025 | ✔️     |   31/08/2025  |
+| Tales | Tecnologias utilizadas  | 24/08/2025    | 31/08/2025 | ✔️     |   31/08/2025  |
+| Tales | Jornada do usuário  | 24/08/2025    | 31/08/2025 | ✔️     |   30/08/2025  |
+| Gabriel | Hospedagem  | 24/08/2025    | 31/08/2025 | ✔️     |   29/08/2025  |
 
 
-#### Semana 2
 
-Atualizado em: 21/04/2024
+#### Semana 5
+
+Atualizado em: 01/09/2025
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| AlunaX        | Página inicial   | 01/02/2024     | 07/03/2024 | ✔️    | 05/02/2024      |
-| AlunaZ        | CSS unificado    | 03/02/2024     | 10/03/2024 | 📝    |                 |
-| AlunoY        | Página de login  | 01/02/2024     | 07/03/2024 | ⌛     |                 |
-| AlunoK        | Script de login  |  01/01/2024    | 12/03/2024 | ❌    |       |
+| Lucas e Daniela | Introdução   | 24/08/2025     | 31/08/2025 | ✔️    | 29/08/2025    |
+| Lucas e Daniela | Objetivos    | 24/08/2025    | 31/08/2025 | ✔️    | 29/08/2025     |
+| Lucas e Daniela | Problemas  | 24/08/2025    | 31/08/2025 | ✔️     |   29/08/2025    |
+| Lucas e Daniela | Justificativa  | 24/08/2025    | 31/08/2025 | ✔️     |   30/08/2025 |
+| Lucas e Daniela | Público-Alvo  | 24/08/2025    | 31/08/2025 | ✔️     |   30/08/2025  |
+| João | Requisitos Funcionais  | 24/08/2025    | 31/08/2025 | ✔️     |   29/08/2025  |
+| João | Requisitos Não Funcionais  | 24/08/2025    | 31/08/2025 | ✔️     |   30/08/2025  |
+| João | Restrições  | 24/08/2025    | 31/08/2025 | ✔️     |   30/08/2025  |
 
 Legenda:
 - ✔️: terminado
