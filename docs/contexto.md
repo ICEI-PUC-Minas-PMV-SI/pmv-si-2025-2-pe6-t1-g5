@@ -179,12 +179,15 @@ Atualizado em: 31/08/2025
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| Lucas e Daniela | Introdução   | 24/08/2025     | 31/08/2025 | ✔️    | 31/08/2025    |
-| Lucas e Daniela | Objetivos    | 24/08/2025    | 31/08/2025 | ✔️    | 31/08/2025     |
-| Lucas e Daniela | Problemas  | 24/08/2025    | 31/08/2025 | ✔️     |   31/08/2025    |
-| Lucas e Daniela | Justificativa  | 24/08/2025    | 31/08/2025 | ✔️     |   31/08/2025    |
-| Lucas e Daniela | Público-Alvo  | 24/08/2025    | 31/08/2025 | ✔️     |   31/08/2025    |
-| AlunoK        | Personas 1  |    01/01/2024        | 12/02/2005 | ❌    |       |
+| Lucas e Daniela | Introdução   | 24/08/2025     | 31/08/2025 | ✔️    | 29/08/2025    |
+| Lucas e Daniela | Objetivos    | 24/08/2025    | 31/08/2025 | ✔️    | 29/08/2025     |
+| Lucas e Daniela | Problemas  | 24/08/2025    | 31/08/2025 | ✔️     |   29/08/2025    |
+| Lucas e Daniela | Justificativa  | 24/08/2025    | 31/08/2025 | ✔️     |   30/08/2025 |
+| Lucas e Daniela | Público-Alvo  | 24/08/2025    | 31/08/2025 | ✔️     |   30/08/2025  |
+| João | Requisitos Funcionais  | 24/08/2025    | 31/08/2025 | ✔️     |   29/08/2025  |
+| João | Requisitos Não Funcionais  | 24/08/2025    | 31/08/2025 | ✔️     |   30/08/2025  |
+| João | Restrições  | 24/08/2025    | 31/08/2025 | ✔️     |   30/08/2025  |
+
 
 #### Semana 2
 
