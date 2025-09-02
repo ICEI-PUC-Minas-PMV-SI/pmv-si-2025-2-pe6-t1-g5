@@ -9,11 +9,15 @@ A crescente demanda por produtos eletrônicos no mercado digital tem revelado de
 ## Objetivos
 
 Objetivo Geral:
-Desenvolver um software de e-commerce com arquitetura distribuída, voltado para a venda de produtos eletrônicos, que ofereça alta disponibilidade, escalabilidade e uma experiência de usuário otimizada.
+Desenvolver um software de e-commerce escalável com arquitetura de sistema distribuído, voltado para o setor de tecnologia, que ofereça alta disponibilidade, escalabilidade e uma experiência de usuário otimizada, servindo de alternativa ao modelo de marketplace irrestrito adotado por grandes grupos do varejo.
+
 Objetivos Específicos:
-- Implementar uma arquitetura baseada em microserviços para garantir modularidade e facilidade de manutenção.
-- Integrar sistemas de pagamento e logística de forma eficiente e segura.
-- Desenvolver funcionalidades que permitam personalização da interface e recomendação de produtos com base em comportamento de compra.
+- Propor um modelo de catálogo de serviços que mantenha o foco no público-alvo;
+- Definir requisitos técnicos iniciais para escalabilidade, segurança e confiança do consumidor;
+- Desenvolver uma aplicação Web;
+- Desenvolver uma aplicação Mobile;
+- Implementar uma arquitetura baseada em microserviços para garantir modularidade e facilidade de manutenção;
+- Pesquisar e propor soluções reais para que se atinja o requisito da disponibilidade do sistema.
 
 ## Justificativa
 A escolha por desenvolver um software de e-commerce com arquitetura distribuída se justifica pela necessidade de atender às exigências do mercado atual, que demanda soluções escaláveis, resilientes e adaptáveis. O setor de eletrônicos, em especial, apresenta alto volume de transações e constante atualização de produtos, o que exige uma plataforma flexível e robusta. Além disso, a arquitetura distribuída permite que diferentes partes do sistema sejam desenvolvidas e escaladas de forma independente, reduzindo riscos e melhorando o desempenho. A proposta também visa proporcionar uma experiência de compra mais fluida e personalizada, aumentando a competitividade da empresa TeraBum no mercado digital.
@@ -55,7 +59,7 @@ O objetido dessa priorização é ter um produto mínimo viável (PMV) que possa
 |RNF-001| A aplicação deve ser de fácil entendimento para o usuário consumidor, sendo o objetivo final do sistema a compra de produtos desejados de maneira rápida e sem entraves.  | ALTA | 
 |RNF-002| O tempo de resposta da aplicação deve ser de, no mínimo, 100ms. |  MÉDIA | 
 |RNF-003| A aplicação deve ser disponibilizada tanto para web quanto para mobile.  |  ALTA | 
-|RNF-004| A aplicação deve ser segura, usando as boas práticas de segurança e não abrindo brechas de vazamento de dados de usuários. |  ALTA | 
+|RNF-004| A aplicação deve ser segura, usando boas práticas de segurança, atendendo à OWASP TOP03 2021 |  ALTA | 
 |RNF-005| A aplicação deve ser escalável de maneira que possa atender eventuais picos e se adaptar a um constante crescimento de seus usuários. |  MÉDIA | 
 |RNF-006| A aplicação deve ter um uptime de 95% ao ano.  |  MÉDIA | 
 |RNF-007| A aplicação deve ser de fácil manutenção tanto para corrigir erros quanto para extender suas funcionalidades. |  MÉDIA | 
@@ -67,8 +71,6 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
-|02| Apesar de ser escalável, o projeto deve ter custo zero durante o desenvolvimento. Isso difere do custo de manter o projeto em produção a longo prazo, que deve ser mantido baixo.        |
-|03| O projeto deve se limitar a venda de produtos de tecnologia como computadores, placas de vídeo, etc...        |
 
 
 # Catálogo de Serviços
@@ -172,15 +174,17 @@ Benefícios da Hospedagem na Vercel
 
 > Apresente a divisão de tarefas entre os membros do grupo e o acompanhamento da execução, conforme o exemplo abaixo.
 
-### Semana 1
+### Semana 4
 
-Atualizado em: 21/04/2024
+Atualizado em: 31/08/2025
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| AlunaX        | Introdução | 01/02/2024     | 07/02/2024 | ✔️    | 05/02/2024      |
-| AlunaZ        | Objetivos    | 03/02/2024     | 10/02/2024 | 📝    |                 |
-| AlunoY        | Histórias de usuário  | 01/01/2024     | 07/01/2005 | ⌛     |                 |
+| Lucas e Daniela | Introdução   | 24/08/2025     | 31/08/2025 | ✔️    | 31/08/2025    |
+| Lucas e Daniela | Objetivos    | 24/08/2025    | 31/08/2025 | ✔️    | 31/08/2025     |
+| Lucas e Daniela | Problemas  | 24/08/2025    | 31/08/2025 | ✔️     |   31/08/2025    |
+| Lucas e Daniela | Justificativa  | 24/08/2025    | 31/08/2025 | ✔️     |   31/08/2025    |
+| Lucas e Daniela | Público-Alvo  | 24/08/2025    | 31/08/2025 | ✔️     |   31/08/2025    |
 | AlunoK        | Personas 1  |    01/01/2024        | 12/02/2005 | ❌    |       |
 
 #### Semana 2
