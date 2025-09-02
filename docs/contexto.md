@@ -8,7 +8,6 @@ A crescente demanda por produtos eletrônicos no mercado digital tem revelado de
 
 ## Objetivos
 
-Objetivo Geral:
 Desenvolver um software de e-commerce escalável com arquitetura de sistema distribuído, voltado para o setor de tecnologia, que ofereça alta disponibilidade, escalabilidade e uma experiência de usuário otimizada, servindo de alternativa ao modelo de marketplace irrestrito adotado por grandes grupos do varejo.
 
 Objetivos Específicos:
