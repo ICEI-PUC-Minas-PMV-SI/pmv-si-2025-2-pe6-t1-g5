@@ -171,8 +171,6 @@ Benefícios da Hospedagem na Vercel
 
 ##  Quadro de tarefas
 
-> Apresente a divisão de tarefas entre os membros do grupo e o acompanhamento da execução, conforme o exemplo abaixo.
-
 ### Semana 4
 
 Atualizado em: 31/08/2025
