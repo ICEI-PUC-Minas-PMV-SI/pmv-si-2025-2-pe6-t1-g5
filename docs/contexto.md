@@ -72,43 +72,19 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |01| O projeto deverá ser entregue até o final do semestre |
 
 
-# Catálogo de Serviços
+## Catálogo de Serviços
 
-Nosso e-commerce oferece um conjunto de funcionalidades que garantem praticidade, segurança e uma boa experiência para clientes e administradores.
+O sistema de e-commerce desenvolvido disponibiliza um conjunto de serviços que buscam assegurar eficiência, segurança e usabilidade tanto para os clientes quanto para os administradores da plataforma.
 
----
+O processo de utilização inicia-se com o *serviço de cadastro e autenticação*, por meio do qual o usuário pode criar uma conta pessoal de maneira segura, garantindo acesso individualizado ao sistema mediante login e senha. Cada perfil de cliente é estruturado para armazenar e manter informações relevantes, como nome completo, e-mail, CPF e endereço, permitindo uma experiência personalizada e coerente com as necessidades do usuário.
 
-##  Cadastro e Login
-- Criação de conta de forma simples e segura.  
-- Acesso ao sistema com login e senha.  
-- Perfil personalizado com dados.  
+No que se refere à exposição e organização dos produtos, a aplicação dispõe de um *catálogo digital* que apresenta os itens no formato Grid View ou exibição em blocos. Cada bloco é acompanhado de botão de compra, preço, imagens ilustrativas do produto e dados sobre estoque atualizado. O ambiente de navegação conta com recursos de filtragem por categorias e interface de usabilidade intuitiva, otimizando a jornada de compra do cliente.
 
----
+O *serviço de gerenciamento de carrinho de compras* possibilita que os usuários adicionem e removam produtos de forma prática sem precisar mudar de página, ajustem quantidades de acordo com suas preferências e mantenham os itens armazenados mesmo após o encerramento da sessão, desde que o acesso seja realizado por meio de conta autenticada. Essa funcionalidade garante conveniência e continuidade no processo de aquisição.
 
-##  Catálogo de Produtos
-- Vitrine completa com descrição, preço, fotos e estoque.  
-- Filtros de busca por categoria.  
-- Navegação intuitiva para facilitar a experiência de compra.  
+No âmbito do *acompanhamento de pedidos*, o sistema oferece ao cliente informações atualizadas sobre o status de suas compras, abrangendo as etapas de pendente, pago, enviado e entregue. Adicionalmente, é disponibilizado o histórico de pedidos anteriores, possibilitando controle e rastreabilidade das transações realizadas na plataforma.
 
----
-
-##  Carrinho de Compras
-- Adição e remoção de itens de forma prática.  
-- Atualização de quantidades conforme a necessidade.  
-- Itens salvos no carrinho mesmo após sair da conta (usuários logados).  
-
----
-
-##  Pedidos  
-- Acompanhamento do status do pedido (pendente, pago, enviado e entregue).  
-- Histórico completo de pedidos anteriores.  
-
----
-
-##  Administração (para gestores)
-- Gerenciamento de produtos, preços e estoque.  
-- Acompanhamento de pedidos e clientes em tempo real.  
-- Relatórios de vendas e dados estratégicos para o negócio.  
+Para o público administrativo, é disponibilizado um *painel de gestão*, no qual é possível realizar o controle de produtos, preços e estoque de forma centralizada. O módulo administrativo também contempla a visualização em tempo real de pedidos e informações de clientes, além da geração de relatórios de vendas e indicadores estratégicos, que apoiam a tomada de decisões e contribuem para o planejamento e evolução do negócio. 
 
 ## Observações Técnicas
 - **Deploy automático:** a cada push no GitHub, a Vercel realiza o deploy contínuo da aplicação.
