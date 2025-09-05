@@ -182,7 +182,7 @@ Atualizado em: 05/09/2025
 | Lucas e João | Correção dos Requisitos Não Funcionais    | 01/09/2025    | 07/09/2025 | 📝    |     |
 | Daniela |  Correção do Catálogo de Serviços  | 01/09/2025    | 07/09/2025 | 📝    |      |
 | Grupo | Criar Slides Apresentação  | 01/09/2025    | 05/09/2025 | 📝    |    |
-| Gabriel |  Correção das Restrições  | 01/09/2025    | 05/09/2025 | 📝    |      |
+| Gabriel |  Correção das Restrições  | 01/09/2025    | 05/09/2025 | ✔️    |      |
 
 Legenda:
 - ✔️: terminado
