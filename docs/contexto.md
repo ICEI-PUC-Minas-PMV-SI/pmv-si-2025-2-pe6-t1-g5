@@ -174,7 +174,7 @@ Atualizado em: 31/08/2025
 
 #### Semana 5
 
-Atualizado em: 01/09/2025
+Atualizado em: 05/09/2025
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
