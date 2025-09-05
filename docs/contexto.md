@@ -58,10 +58,13 @@ O objetido dessa priorização é ter um produto mínimo viável (PMV) que possa
 |RNF-001| A aplicação deve ser de fácil entendimento para o usuário consumidor, sendo o objetivo final do sistema a compra de produtos desejados de maneira rápida e sem entraves.  | ALTA | 
 |RNF-002| O tempo de resposta da aplicação deve ser de, no mínimo, 100ms. |  MÉDIA | 
 |RNF-003| A aplicação deve ser disponibilizada tanto para web quanto para mobile.  |  ALTA | 
-|RNF-004| A aplicação deve ser segura, usando boas práticas de segurança, atendendo à OWASP TOP03 2021 |  ALTA | 
-|RNF-005| A aplicação deve ser escalável de maneira que possa atender eventuais picos e se adaptar a um constante crescimento de seus usuários. |  MÉDIA | 
-|RNF-006| A aplicação deve ter um uptime de 95% ao ano.  |  MÉDIA | 
-|RNF-007| A aplicação deve ser de fácil manutenção tanto para corrigir erros quanto para extender suas funcionalidades. |  MÉDIA | 
+|RNF-004| A aplicação deve ser segura, buscando atender à OWASP TOP 10(2021).  |  ALTA | 
+|RNF-005| O backend deve ser stateless, a fim de tornar a aplicação escalável horizontalmente em caso de pico. |  MÉDIA | 
+|RNF-006| A aplicação deve seguir a arquitetura de microserviços, permitindo escalabilidade de partes independentes do sistema, tolerância a falha e maior facilidade na gestão de times de desenvolvedores. |  BAIXA | 
+|RNF-007| A aplicação deve ter um uptime de 95% ao ano.  |  MÉDIA | 
+|RNF-008| O código fonte deve ser gerenciado utilizando o Github, facilitando a colaboração, a manutenção e o gerenciamento do projeto. |  MÉDIA | 
+|RNF-009| A aplicação deve seguir práticas de CI/CD utilizando Github Actions ou similar. |  BAIXA | 
+
 
 ## Restrições
 
