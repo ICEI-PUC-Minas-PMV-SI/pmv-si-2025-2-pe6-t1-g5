@@ -133,7 +133,7 @@ O fluxo de hospedagem ocorre da seguinte forma:
 
 - Variáveis de ambiente (como chaves de API e credenciais de banco de dados, ex.: Supabase), são definidas no painel da Vercel, garantindo segurança e isolamento de informações sensíveis.
 
-A Vercel gera automaticamente uma URL pública para a aplicação (ex.: https://nomedoprojeto.vercel.app), além da possibilidade de vincular domínios personalizados.
+A Vercel gera automaticamente uma URL pública para a aplicação (ex.: https://pmv-si-2025-2-pe6-t1-g5.vercel.app), além da possibilidade de vincular domínios personalizados.
 
 Benefícios da Hospedagem na Vercel
 
