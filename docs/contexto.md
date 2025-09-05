@@ -65,8 +65,6 @@ O objetido dessa priorização é ter um produto mínimo viável (PMV) que possa
 
 ## Restrições
 
-O projeto está restrito pelos itens apresentados na tabela a seguir.
-
 O projeto está restrito pelos itens apresentados na tabela a seguir:
 
 | ID | Restrição                                                                                                                   |
