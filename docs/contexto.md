@@ -67,9 +67,15 @@ O objetido dessa priorização é ter um produto mínimo viável (PMV) que possa
 
 O projeto está restrito pelos itens apresentados na tabela a seguir.
 
-|ID| Restrição                                             |
-|--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
+O projeto está restrito pelos itens apresentados na tabela a seguir:
+
+| ID | Restrição                                                                                                                   |
+|----|-----------------------------------------------------------------------------------------------------------------------------|
+| 01 | O desenvolvimento inicial deverá ser realizado utilizando **apenas recursos gratuitos** ou de **baixo custo**, garantindo custo zero durante a fase de desenvolvimento. |
+| 02 | O custo de manutenção e evolução do sistema em produção deve permanecer **baixo** ao longo do tempo.                        |
+| 03 | O sistema deve respeitar a **LGPD** e demais normas aplicáveis à proteção de dados dos usuários.                            |
+| 04 | As integrações externas (pagamentos, envio, notificações) devem utilizar **APIs confiáveis** e, preferencialmente, com planos gratuitos ou de testes na fase inicial. |
+| 05 | O projeto deve ser planejado para **escalabilidade gradual**, podendo aumentar recursos ou infraestrutura conforme o crescimento real da base de usuários. |
 
 
 ## Catálogo de Serviços
