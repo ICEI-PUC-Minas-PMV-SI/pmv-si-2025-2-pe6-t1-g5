@@ -81,17 +81,17 @@ O projeto está restrito pelos itens apresentados na tabela a seguir:
 
 ## Catálogo de Serviços
 
-O sistema de e-commerce desenvolvido disponibiliza um conjunto de serviços que buscam assegurar eficiência, segurança e usabilidade tanto para os clientes quanto para os administradores da plataforma.
+Nosso e-commerce disponibiliza um conjunto de funcionalidades projetadas para assegurar praticidade, segurança e uma experiência de uso eficiente, contemplando tanto os clientes quanto os administradores da plataforma.
 
-O processo de utilização inicia-se com o *serviço de cadastro e autenticação*, por meio do qual o usuário pode criar uma conta pessoal de maneira segura, garantindo acesso individualizado ao sistema mediante login e senha. Cada perfil de cliente é estruturado para armazenar e manter informações relevantes, como nome completo, e-mail, CPF e endereço, permitindo uma experiência personalizada e coerente com as necessidades do usuário.
+**Cadastro e Login:** o sistema permite a criação de contas de forma simples e segura, garantindo que cada usuário tenha acesso individualizado por meio de login e senha. Além disso, possibilita a manutenção de um perfil personalizado, no qual ficam armazenados os principais dados do cliente, assegurando uma navegação adaptada às suas necessidades.
 
-No que se refere à exposição e organização dos produtos, a aplicação dispõe de um *catálogo digital* que apresenta os itens no formato Grid View ou exibição em blocos. Cada bloco é acompanhado de botão de compra, preço, imagens ilustrativas do produto e dados sobre estoque atualizado. O ambiente de navegação conta com recursos de filtragem por categorias e interface de usabilidade intuitiva, otimizando a jornada de compra do cliente.
+**Catálogo de Produtos:** a plataforma oferece uma vitrine digital completa, na qual os produtos são apresentados com descrições detalhadas, preços atualizados, imagens de qualidade e informações sobre estoque. O catálogo conta ainda com filtros de busca por categoria e uma interface de navegação intuitiva, que favorece a usabilidade e otimiza a jornada de compra do consumidor.
 
-O *serviço de gerenciamento de carrinho de compras* possibilita que os usuários adicionem e removam produtos de forma prática sem precisar mudar de página, ajustem quantidades de acordo com suas preferências e mantenham os itens armazenados mesmo após o encerramento da sessão, desde que o acesso seja realizado por meio de conta autenticada. Essa funcionalidade garante conveniência e continuidade no processo de aquisição.
+**Carrinho de Compras:** o ambiente de compras inclui a funcionalidade de carrinho, que permite ao usuário adicionar ou remover itens de maneira prática, ajustar quantidades conforme suas preferências e manter os produtos salvos mesmo após sair da conta, desde que esteja autenticado. Essa característica garante maior conveniência e continuidade no processo de aquisição.
 
-No âmbito do *acompanhamento de pedidos*, o sistema oferece ao cliente informações atualizadas sobre o status de suas compras, abrangendo as etapas de pendente, pago, enviado e entregue. Adicionalmente, é disponibilizado o histórico de pedidos anteriores, possibilitando controle e rastreabilidade das transações realizadas na plataforma.
+**Pedidos:** o sistema disponibiliza acompanhamento detalhado do status das compras, abrangendo todas as etapas do fluxo, como pendente, pago, enviado e entregue. Também é fornecido ao cliente um histórico completo de pedidos anteriores, o que possibilita maior controle e rastreabilidade de suas transações realizadas na plataforma.
 
-Para o público administrativo, é disponibilizado um *painel de gestão*, no qual é possível realizar o controle de produtos, preços e estoque de forma centralizada. O módulo administrativo também contempla a visualização em tempo real de pedidos e informações de clientes, além da geração de relatórios de vendas e indicadores estratégicos, que apoiam a tomada de decisões e contribuem para o planejamento e evolução do negócio. 
+**Administração (para gestores):** o e-commerce dispõe de um painel administrativo robusto, que possibilita o gerenciamento centralizado de produtos, preços e estoque. Esse módulo permite acompanhar em tempo real os pedidos e os clientes, além de gerar relatórios de vendas e indicadores estratégicos que oferecem suporte à tomada de decisões e ao planejamento do negócio.
 
 ## Observações Técnicas
 - **Deploy automático:** a cada push no GitHub, a Vercel realiza o deploy contínuo da aplicação.
@@ -183,7 +183,7 @@ Atualizado em: 05/09/2025
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
 | Lucas e Daniela | Correção dos Objetivos   | 01/09/2025     | 07/09/2025 | 📝    |     |
 | Lucas e João | Correção dos Requisitos Não Funcionais    | 01/09/2025    | 07/09/2025 | 📝    |     |
-| Daniela |  Correção do Catálogo de Serviços  | 01/09/2025    | 07/09/2025 | 📝    |      |
+| Daniela |  Correção do Catálogo de Serviços  | 01/09/2025    | 05/09/2025 | 📝    |      |
 | Grupo | Criar Slides Apresentação  | 01/09/2025    | 05/09/2025 | 📝    |    |
 | Gabriel |  Correção das Restrições  | 01/09/2025    | 05/09/2025 | ✔️    |      |
 
