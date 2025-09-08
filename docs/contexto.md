@@ -56,7 +56,7 @@ O objetido dessa priorização é ter um produto mínimo viável (PMV) que possa
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
 |RNF-001| A aplicação deve ter boa usabilidade.  | ALTA | 
-|RNF-002| O tempo de resposta da aplicação deve ser de, no mínimo, 3 segundos. |  MÉDIA | 
+|RNF-002| O tempo de resposta da aplicação deve ser de, no máximo, 3 segundos. |  MÉDIA | 
 |RNF-003| A aplicação deve ser disponibilizada tanto para web quanto para mobile.  |  ALTA | 
 |RNF-004| A aplicação deve armazenar senhas de usuários usando hashs seguros como Argon2.  |  ALTA | 
 |RNF-005| Todo o tráfico de rede deve seguir utilizando o protocolo HTTPS.  |  ALTA | 
