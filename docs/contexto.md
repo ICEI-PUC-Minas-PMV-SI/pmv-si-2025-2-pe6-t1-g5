@@ -65,7 +65,7 @@ O objetido dessa priorização é ter um produto mínimo viável (PMV) que possa
 |RNF-008| A aplicação deve ter um uptime de 95% ao ano.  |  MÉDIA | 
 |RNF-009| O código fonte deve ser gerenciado utilizando o Github, facilitando a colaboração, a manutenção e o gerenciamento do projeto. |  MÉDIA | 
 |RNF-0010| A aplicação deve seguir práticas de CI/CD utilizando Github Actions ou similar. |  BAIXA | 
-|RNF-011| O sistema deve respeitar a **LGPD** e demais normas aplicáveis à proteção de dados dos usuários. |  BAIXA | 
+|RNF-011| O sistema deve respeitar a **LGPD** e demais normas aplicáveis à proteção de dados dos usuários. |  ALTA | 
 
 
 ## Restrições
