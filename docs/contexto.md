@@ -55,15 +55,17 @@ O objetido dessa priorização é ter um produto mínimo viável (PMV) que possa
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| A aplicação deve ser de fácil entendimento para o usuário consumidor, sendo o objetivo final do sistema a compra de produtos desejados de maneira rápida e sem entraves.  | ALTA | 
-|RNF-002| O tempo de resposta da aplicação deve ser de, no mínimo, 100ms. |  MÉDIA | 
+|RNF-001| A aplicação deve ter boa usabilidade.  | ALTA | 
+|RNF-002| O tempo de resposta da aplicação deve ser de, no mínimo, 3 segundos. |  MÉDIA | 
 |RNF-003| A aplicação deve ser disponibilizada tanto para web quanto para mobile.  |  ALTA | 
-|RNF-004| A aplicação deve ser segura, buscando atender à OWASP TOP 10(2021).  |  ALTA | 
-|RNF-005| O backend deve ser stateless, a fim de tornar a aplicação escalável horizontalmente em caso de pico. |  MÉDIA | 
-|RNF-006| A aplicação deve seguir a arquitetura de microserviços, permitindo escalabilidade de partes independentes do sistema, tolerância a falha e maior facilidade na gestão de times de desenvolvedores. |  BAIXA | 
-|RNF-007| A aplicação deve ter um uptime de 95% ao ano.  |  MÉDIA | 
-|RNF-008| O código fonte deve ser gerenciado utilizando o Github, facilitando a colaboração, a manutenção e o gerenciamento do projeto. |  MÉDIA | 
-|RNF-009| A aplicação deve seguir práticas de CI/CD utilizando Github Actions ou similar. |  BAIXA | 
+|RNF-004| A aplicação deve armazenar senhas de usuários usando hashs seguros como Argon2.  |  ALTA | 
+|RNF-005| Todo o tráfico de rede deve seguir utilizando o protocolo HTTPS.  |  ALTA | 
+|RNF-006| O backend deve ser stateless, a fim de tornar a aplicação escalável horizontalmente em caso de pico. |  MÉDIA | 
+|RNF-007| A aplicação deve seguir a arquitetura de microserviços, permitindo escalabilidade de partes independentes do sistema, tolerância a falha e maior facilidade na gestão de times de desenvolvedores. |  BAIXA | 
+|RNF-008| A aplicação deve ter um uptime de 95% ao ano.  |  MÉDIA | 
+|RNF-009| O código fonte deve ser gerenciado utilizando o Github, facilitando a colaboração, a manutenção e o gerenciamento do projeto. |  MÉDIA | 
+|RNF-0010| A aplicação deve seguir práticas de CI/CD utilizando Github Actions ou similar. |  BAIXA | 
+|RNF-011| O sistema deve respeitar a **LGPD** e demais normas aplicáveis à proteção de dados dos usuários. |  BAIXA | 
 
 
 ## Restrições
@@ -72,11 +74,10 @@ O projeto está restrito pelos itens apresentados na tabela a seguir:
 
 | ID | Restrição                                                                                                                   |
 |----|-----------------------------------------------------------------------------------------------------------------------------|
-| 01 | O desenvolvimento inicial deverá ser realizado utilizando **apenas recursos gratuitos** ou de **baixo custo**, garantindo custo zero durante a fase de desenvolvimento. |
-| 02 | O custo de manutenção e evolução do sistema em produção deve permanecer **baixo** ao longo do tempo.                        |
-| 03 | O sistema deve respeitar a **LGPD** e demais normas aplicáveis à proteção de dados dos usuários.                            |
-| 04 | As integrações externas (pagamentos, envio, notificações) devem utilizar **APIs confiáveis** e, preferencialmente, com planos gratuitos ou de testes na fase inicial. |
-| 05 | O projeto deve ser planejado para **escalabilidade gradual**, podendo aumentar recursos ou infraestrutura conforme o crescimento real da base de usuários. |
+| 01 | O projeto deve ser entregue até o final do segundo semestre de 2025. |
+
+
+
 
 
 ## Catálogo de Serviços
