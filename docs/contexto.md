@@ -16,7 +16,6 @@ Objetivos Específicos:
 - Desenvolver uma aplicação Web;
 - Desenvolver uma aplicação Mobile;
 - Implementar uma arquitetura baseada em microserviços para garantir modularidade e facilidade de manutenção;
-- Pesquisar e propor soluções reais para que se atinja o requisito da disponibilidade do sistema.
 
 ## Justificativa
 A escolha por desenvolver um software de e-commerce com arquitetura distribuída se justifica pela necessidade de atender às exigências do mercado atual, que demanda soluções escaláveis, resilientes e adaptáveis. O setor de eletrônicos, em especial, apresenta alto volume de transações e constante atualização de produtos, o que exige uma plataforma flexível e robusta. Além disso, a arquitetura distribuída permite que diferentes partes do sistema sejam desenvolvidas e escaladas de forma independente, reduzindo riscos e melhorando o desempenho. A proposta também visa proporcionar uma experiência de compra mais fluida e personalizada, aumentando a competitividade da empresa TeraBum no mercado digital.
