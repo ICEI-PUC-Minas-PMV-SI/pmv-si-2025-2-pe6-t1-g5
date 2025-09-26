@@ -1,60 +1,88 @@
 # APIs e Web Services
 
-O planejamento de uma aplicação de APIS Web é uma etapa fundamental para o sucesso do projeto. Ao planejar adequadamente, você pode evitar muitos problemas e garantir que a sua API seja segura, escalável e eficiente.
-
-Aqui estão algumas etapas importantes que devem ser consideradas no planejamento de uma aplicação de APIS Web.
-
-[Inclua uma breve descrição do projeto.]
+O planejamento de uma aplicação de APIs Web é uma etapa fundamental para o sucesso do projeto. Ao planejar adequadamente, é possível evitar muitos problemas e garantir que a API seja segura, escalável e eficiente. Neste projeto, foram desenvolvidos microserviços independentes que se comunicam entre si para compor uma aplicação de e-commerce robusta, formada pelos seguintes módulos: **UserService (autenticação)**, **VitrineService (catálogo de produtos)**, **EstoqueService**, **CarrinhoService** e **OrderService (pedidos e pagamentos)**.
 
 ## Objetivos da API
 
-O primeiro passo é definir os objetivos da sua API. O que você espera alcançar com ela? Você quer que ela seja usada por clientes externos ou apenas por aplicações internas? Quais são os recursos que a API deve fornecer?
+O objetivo central da API é disponibilizar recursos para que o sistema de e-commerce funcione de maneira integrada e eficiente, permitindo a interação entre o front-end e os microserviços que compõem o backend. Os principais objetivos são:
 
-[Inclua os objetivos da sua api.]
+- Garantir autenticação e autorização de usuários (UserService).
+- Disponibilizar catálogo de produtos com listagem, busca e detalhes (VitrineService).
+- Controlar e gerenciar níveis de estoque em tempo real (EstoqueService).
+- Possibilitar ao usuário criar e gerenciar um carrinho de compras (CarrinhoService).
+- Concretizar pedidos e processar pagamentos (OrderService).
+- Garantir integração segura, escalável e versionada entre os serviços.
 
 
 ## Modelagem da Aplicação
-[Descreva a modelagem da aplicação, incluindo a estrutura de dados, diagramas de classes ou entidades, e outras representações visuais relevantes.]
+A aplicação segue a arquitetura de microserviços, com cada serviço responsável por uma funcionalidade específica e se comunicando via APIs REST. A modelagem principal inclui as seguintes entidades:
+
+- **Usuário**: id, nome, email, senha (hash), roles.
+- **Produto**: id, nome, descrição, preço, imagens, categoria.
+- **Categoria**: id, nome, descrição.
+- **Estoque**: produtoId, quantidadeDisponível, reservas.
+- **Carrinho**: id, userId, itens (produtoId, quantidade).
+- **Pedido**: id, userId, itens, status, valor total, pagamento.
+
+Cada microserviço possui seu próprio banco de dados, garantindo baixo acoplamento e maior escalabilidade. A comunicação ocorre de forma síncrona via REST e, quando necessário, de forma assíncrona com eventos.
 
 
 ## Tecnologias Utilizadas
 
-Existem muitas tecnologias diferentes que podem ser usadas para desenvolver APIs Web. A tecnologia certa para o seu projeto dependerá dos seus objetivos, dos seus clientes e dos recursos que a API deve fornecer.
+- **Backend**: Node.js / Express.js.  
+- **Banco de Dados**: PostgreSQL (persistência dos microserviços).  
+- **Autenticação**: JWT (JSON Web Token).  
+- **Documentação**: Swagger / OpenAPI.  
+- **Monitoramento**: Prometheus, Grafana.  
+- **Logs**: ELK Stack (Elasticsearch, Logstash, Kibana).  
+- **Containerização**: Docker e Docker Compose.  
+- **Versionamento**: GitHub.  
 
-[Lista das tecnologias principais que serão utilizadas no projeto.]
 
 ## API Endpoints
 
-[Liste os principais endpoints da API, incluindo as operações disponíveis, os parâmetros esperados e as respostas retornadas.]
+A seguir, os principais endpoints de cada microserviço:
 
-### Endpoint 1
-- Método: GET
-- URL: /endpoint1
-- Parâmetros:
-  - param1: [descrição]
-- Resposta:
-  - Sucesso (200 OK)
-    ```
-    {
-      "message": "Success",
-      "data": {
-        ...
-      }
-    }
-    ```
-  - Erro (4XX, 5XX)
-    ```
-    {
-      "message": "Error",
-      "error": {
-        ...
-      }
-    }
-    ```
+### UserService
+- `POST /api/v1/auth/register` – Registrar usuário.  
+- `POST /api/v1/auth/login` – Autenticar usuário.  
+- `GET /api/v1/auth/me` – Consultar perfil autenticado.  
+- `POST /api/v1/auth/logout` – Logout e revogação de token.  
+
+### VitrineService
+- `GET /api/v1/vitrine/produtos` – Listar produtos.  
+- `GET /api/v1/vitrine/produtos/{id}` – Consultar detalhes de produto.  
+- `GET /api/v1/vitrine/categorias` – Listar categorias.  
+- `GET /api/v1/vitrine/busca?q=termo` – Buscar produtos.  
+
+### EstoqueService
+- `GET /api/v1/estoque/produtos/{id}` – Consultar estoque de um produto.  
+- `POST /api/v1/estoque/reservas` – Criar reserva de estoque.  
+- `POST /api/v1/estoque/confirmar` – Confirmar baixa de estoque.  
+- `POST /api/v1/estoque/liberar` – Liberar reserva.  
+
+### CarrinhoService
+- `POST /api/v1/carrinho` – Criar carrinho.  
+- `GET /api/v1/carrinho` – Consultar carrinho do usuário.  
+- `POST /api/v1/carrinho/itens` – Adicionar item ao carrinho.  
+- `PUT /api/v1/carrinho/itens/{id}` – Atualizar item.  
+- `DELETE /api/v1/carrinho/itens/{id}` – Remover item.  
+
+### OrderService
+- `POST /api/v1/orders` – Criar pedido.  
+- `GET /api/v1/orders/{id}` – Consultar pedido.  
+- `GET /api/v1/orders` – Listar pedidos do usuário.  
+- `POST /api/v1/orders/{id}/cancel` – Cancelar pedido.  
+- `POST /api/v1/orders/webhook` – Receber confirmação de pagamento.  
 
 ## Considerações de Segurança
 
-[Discuta as considerações de segurança relevantes para a aplicação distribuída, como autenticação, autorização, proteção contra ataques, etc.]
+- Autenticação obrigatória em endpoints que manipulam dados sensíveis (JWT).  
+- Autorização baseada em perfis de acesso (usuário comum vs. administrador).  
+- Criptografia de senhas com hash seguro (bcrypt).  
+- Comunicação via HTTPS.  
+- Rate limiting para mitigar ataques de força bruta.  
+- Validação de entrada para prevenir injeções SQL e XSS.
 
 ## Implantação
 
@@ -78,7 +106,10 @@ Existem muitas tecnologias diferentes que podem ser usadas para desenvolver APIs
 
 # Referências
 
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
+- Richardson, C. *Microservices Patterns*. Manning, 2019.  
+- Newman, S. *Building Microservices*. O’Reilly, 2021.  
+- OpenAPI Specification. https://swagger.io/specification/  
+- OWASP API Security Top 10. https://owasp.org/  
 
 # Planejamento
 
