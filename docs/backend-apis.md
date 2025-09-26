@@ -29,14 +29,11 @@ Cada microserviço possui seu próprio banco de dados, garantindo baixo acoplame
 
 ## Tecnologias Utilizadas
 
-- **Backend**: Node.js / Express.js.  
-- **Banco de Dados**: PostgreSQL (persistência dos microserviços).  
+- **Backend**: API Web do ASP.NET Core.
+- **Banco de Dados**: PostgreSQL (SupaBase).  
 - **Autenticação**: JWT (JSON Web Token).  
 - **Documentação**: Swagger / OpenAPI.  
-- **Monitoramento**: Prometheus, Grafana.  
-- **Logs**: ELK Stack (Elasticsearch, Logstash, Kibana).  
-- **Containerização**: Docker e Docker Compose.  
-- **Versionamento**: GitHub.  
+- **Versionamento**: GitHub.
 
 
 ## API Endpoints
@@ -47,7 +44,7 @@ A seguir, os principais endpoints de cada microserviço:
 - `POST /api/v1/auth/register` – Registrar usuário.  
 - `POST /api/v1/auth/login` – Autenticar usuário.  
 - `GET /api/v1/auth/me` – Consultar perfil autenticado.  
-- `POST /api/v1/auth/logout` – Logout e revogação de token.  
+- `POST /api/v1/auth/logout` – Logout e revogação de token.
 
 ### VitrineService
 - `GET /api/v1/vitrine/produtos` – Listar produtos.  
