@@ -90,6 +90,12 @@ A seguir, os principais endpoints de cada microserviço:
 - `PUT /api/v1/carrinho/itens/{id}` – Atualizar item.  
 - `DELETE /api/v1/carrinho/itens/{id}` – Remover item.  
 
+### OrderService
+
+- `POST /api/v1/payments` – Criar pagamento
+- `GET /api/v1/payments/{orderId}` – Consultar pagamento por pedido  
+- `PATCH /api/v1/payments/{paymentId}` – Atualizar status do pagamento  
+- `DELETE /api/v1/payments/{paymentId}` – Cancelar pagamento  
 
 ## Considerações de Segurança
 
