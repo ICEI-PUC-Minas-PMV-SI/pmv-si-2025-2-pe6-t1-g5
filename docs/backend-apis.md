@@ -210,13 +210,18 @@ Utilize o Nginx como proxy reverso, mapeando domínios personalizados (por exemp
 
 ## Testes
 
-[Descreva a estratégia de teste, incluindo os tipos de teste a serem realizados (unitários, integração, carga, etc.) e as ferramentas a serem utilizadas.]
+### Teste RF-002
 
-1. Crie casos de teste para cobrir todos os requisitos funcionais e não funcionais da aplicação.
-2. Implemente testes unitários para testar unidades individuais de código, como funções e classes.
-3. Realize testes de integração para verificar a interação correta entre os componentes da aplicação.
-4. Execute testes de carga para avaliar o desempenho da aplicação sob carga significativa.
-5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.
+Para os testes dessa funcionalidade, foram executadas as requisições HTTP suportadas pelo EstoqueService. As requisições requerem, como medida de segurança, a função de Administrador para que a API realize as operações.
+
+#### Teste criação de produto e cadastro de produto no estoque:
+<img width="1918" height="967" alt="image" src="https://github.com/user-attachments/assets/c37e9558-5947-4837-82b8-b6fed6fd437c" />
+
+#### Teste baixa de estoque para o registro de estoque de um produto:
+<img width="1919" height="809" alt="image" src="https://github.com/user-attachments/assets/99dab475-6795-4bb7-9f22-13abb1565c1c" />
+
+#### Teste listagens de estoque, movimentações de estoque, galpões e produtos:
+<img width="1911" height="904" alt="image" src="https://github.com/user-attachments/assets/c0b345d3-9094-4f0c-9791-a0a5a96e6fa6" />
 
 # Referências
 
