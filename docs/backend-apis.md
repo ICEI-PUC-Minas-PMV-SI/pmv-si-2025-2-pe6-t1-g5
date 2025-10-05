@@ -187,17 +187,19 @@ docker ps
 | Serviço         | Porta | URL Swagger                                                                          |
 | --------------- | ----- | ------------------------------------------------------------------------------------ |
 | UserService     | 5000  | [http://localhost:5000/swagger/index.html](http://localhost:5000/swagger/index.html) |
-| VitrineService  | 5010  | [http://localhost:5010/swagger/index.html](http://localhost:5010/swagger/index.html) |
+| Vitrine  | 5010  | [http://localhost:5010/swagger/index.html](http://localhost:5010/swagger/index.html) |
 | EstoqueService  | 5020  | [http://localhost:5020/swagger/index.html](http://localhost:5020/swagger/index.html) |
-| CarrinhoService | 5030  | [http://localhost:5030/swagger/index.html](http://localhost:5030/swagger/index.html) |
+| Carrinho | 5030  | [http://localhost:5030/swagger/index.html](http://localhost:5030/swagger/index.html) |
 | OrderService    | 5050  | [http://localhost:5050/swagger/index.html](http://localhost:5050/swagger/index.html) |
-| PaymentService  | 5070  | [http://localhost:5070/swagger/index.html](http://localhost:5070/swagger/index.html) |
+| OrderService  | 5070  | [http://localhost:5070/swagger/index.html](http://localhost:5070/swagger/index.html) |
 
-### Deploy em Produção
+### Deploy em Produção EC2
 
--Crie uma instância EC2 (t3.micro ou superior) e configure o Security Group liberando as portas 80 e 443.
--Instale o Docker e o Docker Compose conforme os requisitos.
--Copie os arquivos da aplicação para o servidor (ou use git pull).
+```
+Crie uma instância EC2 (t3.micro ou superior) e configure o Security Group liberando as portas 80 e 443.
+Instale o Docker e o Docker Compose conforme os requisitos.
+Copie os arquivos da aplicação para o servidor (ou use git pull).
+```
 
 Execute:
 ```
