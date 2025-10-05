@@ -42,10 +42,13 @@ Cada microserviço é encarregado de expor os endpoints para a manipulação das
 A seguir, os principais endpoints de cada microserviço:
 
 ### UserService
-- `POST /api/v1/auth/register` – Registrar usuário.  
-- `POST /api/v1/auth/login` – Autenticar usuário.  
-- `GET /api/v1/auth/me` – Consultar perfil autenticado.  
-- `POST /api/v1/auth/logout` – Logout e revogação de token.
+- `POST /api/v1/Users/register` – Registrar usuário.  
+- `POST /api/v1/Users/login` – Autenticar usuário.  
+- `GET /api/v1/Users` – Consultar todos os perfis (somente Admin.).
+- `GET /api/v1/Users/{id}` – Consultar o própio perfil autenticado (todos usuários).  
+- `PUT /api/v1/Users/{id}` – Atualizar o seu próprio dado.
+- `PUT /api/v1/Users/{id}/role` – Mudar a role dos usuários (somente Admin.).
+- `DELETE /api/v1/Users/{id}` – Apagar o seu próprio usuário.
 
 ### VitrineService
 - `GET /api/v1/vitrine/Product` – Listar produtos.
