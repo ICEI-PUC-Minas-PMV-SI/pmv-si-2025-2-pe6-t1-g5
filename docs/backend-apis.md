@@ -178,10 +178,14 @@ API_KEY=
 Certifique-se de que os valores estejam corretos e consistentes entre os serviços.
 
 3. Gerar imagens e subir os containers
+```
 docker compose up -d --build
+```
 
 Verifique se os containers estão ativos:
+```
 docker ps
+```
 
 | Serviço         | Porta | URL Swagger                                                                          |
 | --------------- | ----- | ------------------------------------------------------------------------------------ |
@@ -196,7 +200,9 @@ docker ps
 
 ```
 Crie uma instância EC2 (t3.micro ou superior) e configure o Security Group liberando as portas 80 e 443.
+
 Instale o Docker e o Docker Compose conforme os requisitos.
+
 Copie os arquivos da aplicação para o servidor (ou use git pull).
 ```
 
