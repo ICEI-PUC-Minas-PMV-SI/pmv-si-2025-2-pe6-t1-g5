@@ -193,52 +193,18 @@ docker ps
 | OrderService    | 5050  | [http://localhost:5050/swagger/index.html](http://localhost:5050/swagger/index.html) |
 | PaymentService  | 5070  | [http://localhost:5070/swagger/index.html](http://localhost:5070/swagger/index.html) |
 
-Deploy em Produção
+### Deploy em Produção
 
-Crie uma instância EC2 (t3.micro ou superior) e configure o Security Group liberando as portas 80 e 443.
-
-Instale o Docker e o Docker Compose conforme os requisitos.
-
-Copie os arquivos da aplicação para o servidor (ou use git pull).
+-Crie uma instância EC2 (t3.micro ou superior) e configure o Security Group liberando as portas 80 e 443.
+-Instale o Docker e o Docker Compose conforme os requisitos.
+-Copie os arquivos da aplicação para o servidor (ou use git pull).
 
 Execute:
-
+```
 docker compose up -d
-
+```
 
 Utilize o Nginx como proxy reverso, mapeando domínios personalizados (por exemplo, api.sistema.com).
-
-Configure logs persistentes e monitore os serviços com Zabbix, Prometheus ou CloudWatch.
-
-Testes Pós-Implantação
-
-Após o deploy:
-
-Verifique o status dos containers:
-
-docker ps
-
-
-Todos devem estar com o status healthy.
-
-Acesse cada endpoint /swagger e valide o funcionamento das rotas.
-
-Execute um fluxo completo de teste:
-
-Criar usuário
-
-Adicionar produto ao carrinho
-
-Criar pedido
-
-Efetuar pagamento
-
-Monitore os logs:
-
-docker logs <container_name>
-
-
-para verificar comunicação e estabilidade entre os microserviços.
 
 ## Testes
 
