@@ -199,7 +199,7 @@ docker ps
 ### Deploy em Produção EC2
 
 ```
-Crie uma instância EC2 (t3.micro ou superior) e configure o Security Group liberando as portas 80 e 443.
+Crie uma instância EC2 (t3.micro ou superior) e configure o Security Group liberando as necessárias. (80, 443, configuradas nos Containers...)
 
 Instale o Docker e o Docker Compose conforme os requisitos.
 
