@@ -157,12 +157,11 @@ Em produção, recomenda-se o uso de **AWS EC2 + RDS (MySQL)**, garantindo isola
 ### 1. Clonar os repositórios dos microserviços
 
 ```bash
-git clone https://github.com/seu-org/microservico-usuarios.git
-git clone https://github.com/seu-org/microservico-vitrine.git
-git clone https://github.com/seu-org/microservico-estoque.git
-git clone https://github.com/seu-org/microservico-carrinho.git
-git clone https://github.com/seu-org/microservico-pedido.git
-git clone https://github.com/seu-org/microservico-pagamento.git
+git clone https://github.com/TeraBum/microservico-pagamento.git
+git clone https://github.com/TeraBum/microservico-estoque.git
+git clone https://github.com/TeraBum/microservico-vitrine.git
+git clone https://github.com/TeraBum/microservico-carrinho.git
+git clone https://github.com/TeraBum/microservico-autenticacao.git
 ```
 2. Configurar variáveis de ambiente (.env)
 
