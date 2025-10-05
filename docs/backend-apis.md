@@ -48,10 +48,9 @@ A seguir, os principais endpoints de cada microserviço:
 - `POST /api/v1/auth/logout` – Logout e revogação de token.
 
 ### VitrineService
-- `GET /api/v1/vitrine/produtos` – Listar produtos.  
-- `GET /api/v1/vitrine/produtos/{id}` – Consultar detalhes de produto.  
-- `GET /api/v1/vitrine/categorias` – Listar categorias.  
-- `GET /api/v1/vitrine/busca?q=termo` – Buscar produtos.  
+- `GET /api/v1/vitrine/Product` – Listar produtos.
+- `GET /api/v1/vitrine/Product/{id}` – Consultar detalhes de produto.
+- `GET /api/v1/vitrine/Product/{id}/stock` – Consultar estoque de um produto específico.
 
 ### EstoqueService
 
