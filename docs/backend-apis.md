@@ -108,13 +108,116 @@ A seguir, os principais endpoints de cada microserviço:
 
 ## Implantação
 
-[Instruções para implantar a aplicação distribuída em um ambiente de produção.]
+A implantação da aplicação distribuída é realizada utilizando containers Docker, orquestrados por um Docker Compose, o que facilita a configuração, execução e escalabilidade dos microserviços em ambientes de produção.
 
-1. Defina os requisitos de hardware e software necessários para implantar a aplicação em um ambiente de produção.
-2. Escolha uma plataforma de hospedagem adequada, como um provedor de nuvem ou um servidor dedicado.
-3. Configure o ambiente de implantação, incluindo a instalação de dependências e configuração de variáveis de ambiente.
-4. Faça o deploy da aplicação no ambiente escolhido, seguindo as instruções específicas da plataforma de hospedagem.
-5. Realize testes para garantir que a aplicação esteja funcionando corretamente no ambiente de produção.
+ ## Requisitos de Hardware
+
+Para um ambiente de produção de pequeno porte:
+
+CPU: 4 vCPUs
+
+Memória RAM: 8 GB
+
+Armazenamento: 40 GB SSD
+
+Rede: Conexão estável com acesso à internet (porta 80, 443 e 3306 abertas)
+
+Para ambientes com maior volume de requisições, recomenda-se ajustar os recursos de CPU e memória conforme a demanda.
+
+ ## Requisitos de Software
+
+Sistema Operacional: Linux (Ubuntu 22.04 LTS ou Amazon Linux 2023)
+
+Docker: ≥ 26.x
+
+Docker Compose: ≥ v2.x
+
+Git: para clonagem dos repositórios
+
+Nginx (opcional): como proxy reverso e balanceador de carga
+
+Banco de Dados: MySQL 8.x (pode ser RDS ou container dedicado, estamos usando Supabase)
+
+ ## Plataforma de Hospedagem
+
+A aplicação pode ser hospedada em:
+
+AWS EC2 (Free Tier ou produção leve)
+
+Azure VM ou Google Compute Engine
+
+Servidores dedicados on-premise
+
+
+ ## Configuração do Ambiente
+
+Clonar os repositórios dos microserviços:
+
+git clone https://github.com/seu-org/microservico-usuarios.git
+git clone https://github.com/seu-org/microservico-vitrine.git
+git clone https://github.com/seu-org/microservico-estoque.git
+git clone https://github.com/seu-org/microservico-carrinho.git
+git clone https://github.com/seu-org/microservico-pedido.git
+git clone https://github.com/seu-org/microservico-pagamento.git
+
+
+Configurar variáveis de ambiente (.env)
+Cada microserviço possui seu arquivo .env contendo:
+
+Credenciais do banco (DB_HOST, DB_USER, DB_PASS, DB_NAME)
+
+Porta de execução (PORT)
+
+Tokens e chaves de API, se aplicável
+
+Gerar imagem e subir containers:
+
+docker compose up -d --build
+
+
+## Verificar containers ativos:
+
+docker ps
+
+
+Acesso aos serviços, é necessário ajustar as portas utilizadas por cada container/API
+
+UserService → http://localhost:xxxx/swagger/index.html
+
+VitrineService → http://localhost:xxxx/swagger/index.html
+
+EstoqueService → http://localhost:xxxx/swagger/index.html
+
+CarrinhoService → http://localhost:xxxx/swagger/index.html
+
+OrderService → http://localhost:xxxx/swagger/index.html
+
+PaymentService → http://localhost:xxxx/swagger/index.html
+
+ ## Deploy em Produção
+
+Crie uma instância EC2 (t3.micro ou superior) e configure o Security Group liberando as portas 80 e 443.
+
+Instale Docker e Docker Compose conforme os requisitos.
+
+Copie os arquivos da aplicação (ou utilize git pull direto no servidor).
+
+Execute docker compose up -d para iniciar todos os serviços.
+
+Utilize Nginx como proxy reverso para mapear domínios personalizados (ex: api.sistema.com).
+
+
+ ## Testes Pós-Implantação
+
+Após o deploy:
+
+Verifique se todos os containers estão “healthy” via docker ps.
+
+Acesse cada endpoint /swagger e valide o funcionamento das rotas.
+
+Realize um fluxo completo (criar usuário → adicionar produto → criar pedido → efetuar pagamento).
+
+Monitore logs via docker logs <container> para garantir estabilidade e comunicação entre serviços.
 
 ## Testes
 
