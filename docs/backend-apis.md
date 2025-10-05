@@ -86,12 +86,12 @@ A seguir, os principais endpoints de cada microserviço:
 - `PUT /api/v1/warehouse/{id}` – Atualizar dados de um galpão.
 - `DELETE /api/v1/warehouse/{id}` – Deletar um galpão.
 
-### CarrinhoService
-- `POST /api/v1/carrinho` – Criar carrinho.  
-- `GET /api/v1/carrinho` – Consultar carrinho do usuário.  
-- `POST /api/v1/carrinho/itens` – Adicionar item ao carrinho.  
-- `PUT /api/v1/carrinho/itens/{id}` – Atualizar item.  
-- `DELETE /api/v1/carrinho/itens/{id}` – Remover item.  
+### CartService
+- `POST /api/v1/cart` – Criar carrinho.  
+- `GET /api/v1/cart` – Consultar carrinho do usuário.  
+- `PATCH /api/v1/cart/cart-items` – Editar items do carrinho.  
+- `PATCH /api/v1/cart/cancel` – Cancelar carrinho.  
+- `POST /api/v1/cart/checkout` – Realizar checkout com carrinho.  
 
 ### OrderService
 
