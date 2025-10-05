@@ -141,7 +141,7 @@ A seguir, os principais endpoints de cada microserviço:
 
 ### Semana 1
 
-Atualizado em: 21/04/2024
+Atualizado em: 29/09/2025
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
@@ -152,7 +152,7 @@ Atualizado em: 21/04/2024
 
 #### Semana 2
 
-Atualizado em: 21/04/2024
+Atualizado em: 04/10/2025 
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
