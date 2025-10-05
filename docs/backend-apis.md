@@ -108,100 +108,135 @@ A seguir, os principais endpoints de cada microserviço:
 
 ## Implantação
 
-A implantação da aplicação distribuída é realizada utilizando containers Docker, orquestrados por um Docker Compose, o que facilita a configuração, execução e escalabilidade dos microserviços em ambientes de produção.
+A implantação da aplicação distribuída é realizada utilizando **containers Docker**, orquestrados por um **Docker Compose**, o que facilita a configuração, execução e escalabilidade dos microserviços em ambientes de produção.
+
+---
 
 ## Requisitos de Hardware
 
-Para um ambiente de produção de pequeno porte:
-CPU: 4 vCPUs
-Memória RAM: 8 GB
-Armazenamento: 40 GB SSD
-Rede: Conexão estável com acesso à internet (portas 80, 443 e 3306 abertas)
+**Para um ambiente de produção de pequeno porte:**
+
+| Recurso | Especificação |
+|----------|----------------|
+| CPU | 4 vCPUs |
+| Memória RAM | 8 GB |
+| Armazenamento | 40 GB SSD |
+| Rede | Conexão estável com acesso à internet (portas 80, 443 e 3306 abertas) |
+
 Em ambientes com maior volume de requisições, recomenda-se ajustar os recursos de CPU e memória conforme a demanda.
+
+---
 
 ## Requisitos de Software
 
-Sistema Operacional: Linux (Ubuntu 22.04 LTS ou Amazon Linux 2023)
-Docker: ≥ 26.x
-Docker Compose: ≥ v2.x
-Git: para clonagem dos repositórios
-Nginx (opcional): para proxy reverso e balanceamento de carga
-Banco de Dados: MySQL 8.x (pode ser Amazon RDS ou container dedicado; neste projeto foi utilizado o Supabase)
+| Componente | Versão Recomendada |
+|-------------|--------------------|
+| Sistema Operacional | Linux (Ubuntu 22.04 LTS ou Amazon Linux 2023) |
+| Docker | ≥ 26.x |
+| Docker Compose | ≥ v2.x |
+| Git | Última versão |
+| Nginx (opcional) | Para proxy reverso e balanceamento de carga |
+| Banco de Dados | MySQL 8.x (pode ser Amazon RDS ou container dedicado; neste projeto foi utilizado o Supabase) |
+
+---
 
 ## Plataforma de Hospedagem
 
 A aplicação pode ser hospedada em diferentes ambientes, de acordo com o nível de disponibilidade desejado:
--AWS EC2 (Free Tier ou produção leve)
--Azure VM ou Google Compute Engine
--Servidores dedicados on-premise
 
-Em produção, recomenda-se o uso de AWS EC2 + RDS (MySQL), garantindo isolamento entre serviços e maior escalabilidade.
+- AWS EC2 – ideal para ambiente de produção leve ou Free Tier  
+- Azure VM ou Google Compute Engine – alternativas equivalentes  
+- Servidor Dedicado On-premise – opção local para testes internos  
+
+Em produção, recomenda-se o uso de **AWS EC2 + RDS (MySQL)**, garantindo isolamento entre serviços e maior escalabilidade.
+
+---
 
 ## Configuração do Ambiente
 
-Clonar os repositórios dos microserviços:
+### 1. Clonar os repositórios dos microserviços
 
+```bash
 git clone https://github.com/seu-org/microservico-usuarios.git
 git clone https://github.com/seu-org/microservico-vitrine.git
 git clone https://github.com/seu-org/microservico-estoque.git
 git clone https://github.com/seu-org/microservico-carrinho.git
 git clone https://github.com/seu-org/microservico-pedido.git
 git clone https://github.com/seu-org/microservico-pagamento.git
+```
+2. Configurar variáveis de ambiente (.env)
 
-Configurar variáveis de ambiente (.env)
-Cada microserviço possui um arquivo .env contendo:
+Cada microserviço possui seu próprio arquivo .env, contendo:
+```
+DB_HOST=
+DB_USER=
+DB_PASS=
+DB_NAME=
+PORT=
+JWT_SECRET=
+API_KEY=
+```
+Certifique-se de que os valores estejam corretos e consistentes entre os serviços.
 
-Credenciais de banco (DB_HOST, DB_USER, DB_PASS, DB_NAME)
-Porta de execução (PORT)
-Tokens e chaves de API (ex: JWT_SECRET, API_KEY, etc.)
-
-Gerar imagens e subir os containers:
+3. Gerar imagens e subir os containers
 docker compose up -d --build
 
-Verificar containers ativos:
+Verifique se os containers estão ativos:
 docker ps
 
-Acessar os serviços (ajustar conforme portas atribuídas):
+| Serviço         | Porta | URL Swagger                                                                          |
+| --------------- | ----- | ------------------------------------------------------------------------------------ |
+| UserService     | 5000  | [http://localhost:5000/swagger/index.html](http://localhost:5000/swagger/index.html) |
+| VitrineService  | 5010  | [http://localhost:5010/swagger/index.html](http://localhost:5010/swagger/index.html) |
+| EstoqueService  | 5020  | [http://localhost:5020/swagger/index.html](http://localhost:5020/swagger/index.html) |
+| CarrinhoService | 5030  | [http://localhost:5030/swagger/index.html](http://localhost:5030/swagger/index.html) |
+| OrderService    | 5050  | [http://localhost:5050/swagger/index.html](http://localhost:5050/swagger/index.html) |
+| PaymentService  | 5070  | [http://localhost:5070/swagger/index.html](http://localhost:5070/swagger/index.html) |
 
-UserService: http://localhost:5000/swagger/index.html
-VitrineService: http://localhost:5010/swagger/index.html
-EstoqueService: http://localhost:5020/swagger/index.html
-CarrinhoService: http://localhost:5030/swagger/index.html
-OrderService: http://localhost:5050/swagger/index.html
-PaymentService: http://localhost:5070/swagger/index.html
-
-## Deploy em Produção
+Deploy em Produção
 
 Crie uma instância EC2 (t3.micro ou superior) e configure o Security Group liberando as portas 80 e 443.
 
-Instale o Docker e o Docker Compose conforme os requisitos acima.
-Copie os arquivos da aplicação ou utilize git pull diretamente no servidor.
+Instale o Docker e o Docker Compose conforme os requisitos.
 
-Execute o comando:
+Copie os arquivos da aplicação para o servidor (ou use git pull).
+
+Execute:
+
 docker compose up -d
 
 
-para iniciar todos os microserviços.
-
 Utilize o Nginx como proxy reverso, mapeando domínios personalizados (por exemplo, api.sistema.com).
-Configure logs persistentes e monitore os serviços via ferramentas como Zabbix, Prometheus ou CloudWatch.
 
-## Testes Pós-Implantação
+Configure logs persistentes e monitore os serviços com Zabbix, Prometheus ou CloudWatch.
+
+Testes Pós-Implantação
 
 Após o deploy:
 
-Verifique se todos os containers estão com status “healthy” via docker ps.
+Verifique o status dos containers:
+
+docker ps
+
+
+Todos devem estar com o status healthy.
+
 Acesse cada endpoint /swagger e valide o funcionamento das rotas.
 
-Execute um fluxo completo no sistema:
+Execute um fluxo completo de teste:
 
 Criar usuário
+
 Adicionar produto ao carrinho
+
 Criar pedido
+
 Efetuar pagamento
 
-Monitore os logs com:
+Monitore os logs:
+
 docker logs <container_name>
+
 
 para verificar comunicação e estabilidade entre os microserviços.
 
