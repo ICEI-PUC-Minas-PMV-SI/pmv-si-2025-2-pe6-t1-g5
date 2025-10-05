@@ -27,6 +27,7 @@ A aplicação segue a arquitetura de microserviços, com cada serviço responsá
 - **Pedido**: id, userId, itens, status, valor total, pagamento.
 
 Cada microserviço é encarregado de expor os endpoints para a manipulação das estruturas de dados definidas acima. Essa manipulação é a criação, alteração, deleção e recuperação desses dados persistidos em banco de dados.
+<img width="1061" height="526" alt="supabase-schema-smjdaavxsnbmrdrvejsu" src="https://github.com/user-attachments/assets/660101fe-6743-4ea5-b40d-069eb4d951bf" />
 
 ## Tecnologias Utilizadas
 
