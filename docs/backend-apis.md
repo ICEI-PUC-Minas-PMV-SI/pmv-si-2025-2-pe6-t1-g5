@@ -110,46 +110,34 @@ A seguir, os principais endpoints de cada microserviço:
 
 A implantação da aplicação distribuída é realizada utilizando containers Docker, orquestrados por um Docker Compose, o que facilita a configuração, execução e escalabilidade dos microserviços em ambientes de produção.
 
- ## Requisitos de Hardware
+## Requisitos de Hardware
 
 Para um ambiente de produção de pequeno porte:
-
 CPU: 4 vCPUs
-
 Memória RAM: 8 GB
-
 Armazenamento: 40 GB SSD
+Rede: Conexão estável com acesso à internet (portas 80, 443 e 3306 abertas)
+Em ambientes com maior volume de requisições, recomenda-se ajustar os recursos de CPU e memória conforme a demanda.
 
-Rede: Conexão estável com acesso à internet (porta 80, 443 e 3306 abertas)
-
-Para ambientes com maior volume de requisições, recomenda-se ajustar os recursos de CPU e memória conforme a demanda.
-
- ## Requisitos de Software
+## Requisitos de Software
 
 Sistema Operacional: Linux (Ubuntu 22.04 LTS ou Amazon Linux 2023)
-
 Docker: ≥ 26.x
-
 Docker Compose: ≥ v2.x
-
 Git: para clonagem dos repositórios
+Nginx (opcional): para proxy reverso e balanceamento de carga
+Banco de Dados: MySQL 8.x (pode ser Amazon RDS ou container dedicado; neste projeto foi utilizado o Supabase)
 
-Nginx (opcional): como proxy reverso e balanceador de carga
+## Plataforma de Hospedagem
 
-Banco de Dados: MySQL 8.x (pode ser RDS ou container dedicado, estamos usando Supabase)
+A aplicação pode ser hospedada em diferentes ambientes, de acordo com o nível de disponibilidade desejado:
+-AWS EC2 (Free Tier ou produção leve)
+-Azure VM ou Google Compute Engine
+-Servidores dedicados on-premise
 
- ## Plataforma de Hospedagem
+Em produção, recomenda-se o uso de AWS EC2 + RDS (MySQL), garantindo isolamento entre serviços e maior escalabilidade.
 
-A aplicação pode ser hospedada em:
-
-AWS EC2 (Free Tier ou produção leve)
-
-Azure VM ou Google Compute Engine
-
-Servidores dedicados on-premise
-
-
- ## Configuração do Ambiente
+## Configuração do Ambiente
 
 Clonar os repositórios dos microserviços:
 
@@ -160,64 +148,62 @@ git clone https://github.com/seu-org/microservico-carrinho.git
 git clone https://github.com/seu-org/microservico-pedido.git
 git clone https://github.com/seu-org/microservico-pagamento.git
 
-
 Configurar variáveis de ambiente (.env)
-Cada microserviço possui seu arquivo .env contendo:
+Cada microserviço possui um arquivo .env contendo:
 
-Credenciais do banco (DB_HOST, DB_USER, DB_PASS, DB_NAME)
-
+Credenciais de banco (DB_HOST, DB_USER, DB_PASS, DB_NAME)
 Porta de execução (PORT)
+Tokens e chaves de API (ex: JWT_SECRET, API_KEY, etc.)
 
-Tokens e chaves de API, se aplicável
-
-Gerar imagem e subir containers:
-
+Gerar imagens e subir os containers:
 docker compose up -d --build
 
-
-## Verificar containers ativos:
-
+Verificar containers ativos:
 docker ps
 
+Acessar os serviços (ajustar conforme portas atribuídas):
 
-Acesso aos serviços, é necessário ajustar as portas utilizadas por cada container/API
+UserService: http://localhost:5000/swagger/index.html
+VitrineService: http://localhost:5010/swagger/index.html
+EstoqueService: http://localhost:5020/swagger/index.html
+CarrinhoService: http://localhost:5030/swagger/index.html
+OrderService: http://localhost:5050/swagger/index.html
+PaymentService: http://localhost:5070/swagger/index.html
 
-UserService → http://localhost:xxxx/swagger/index.html
-
-VitrineService → http://localhost:xxxx/swagger/index.html
-
-EstoqueService → http://localhost:xxxx/swagger/index.html
-
-CarrinhoService → http://localhost:xxxx/swagger/index.html
-
-OrderService → http://localhost:xxxx/swagger/index.html
-
-PaymentService → http://localhost:xxxx/swagger/index.html
-
- ## Deploy em Produção
+## Deploy em Produção
 
 Crie uma instância EC2 (t3.micro ou superior) e configure o Security Group liberando as portas 80 e 443.
 
-Instale Docker e Docker Compose conforme os requisitos.
+Instale o Docker e o Docker Compose conforme os requisitos acima.
+Copie os arquivos da aplicação ou utilize git pull diretamente no servidor.
 
-Copie os arquivos da aplicação (ou utilize git pull direto no servidor).
-
-Execute docker compose up -d para iniciar todos os serviços.
-
-Utilize Nginx como proxy reverso para mapear domínios personalizados (ex: api.sistema.com).
+Execute o comando:
+docker compose up -d
 
 
- ## Testes Pós-Implantação
+para iniciar todos os microserviços.
+
+Utilize o Nginx como proxy reverso, mapeando domínios personalizados (por exemplo, api.sistema.com).
+Configure logs persistentes e monitore os serviços via ferramentas como Zabbix, Prometheus ou CloudWatch.
+
+## Testes Pós-Implantação
 
 Após o deploy:
 
-Verifique se todos os containers estão “healthy” via docker ps.
-
+Verifique se todos os containers estão com status “healthy” via docker ps.
 Acesse cada endpoint /swagger e valide o funcionamento das rotas.
 
-Realize um fluxo completo (criar usuário → adicionar produto → criar pedido → efetuar pagamento).
+Execute um fluxo completo no sistema:
 
-Monitore logs via docker logs <container> para garantir estabilidade e comunicação entre serviços.
+Criar usuário
+Adicionar produto ao carrinho
+Criar pedido
+Efetuar pagamento
+
+Monitore os logs com:
+docker logs <container_name>
+
+para verificar comunicação e estabilidade entre os microserviços.
 
 ## Testes
 
