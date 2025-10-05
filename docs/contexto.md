@@ -48,7 +48,7 @@ O objetido dessa priorização é ter um produto mínimo viável (PMV) que possa
 |RF-008| O usuário deve ser capaz de ver suas compras, incluindo status e localização.    | MÉDIA |
 |RF-009| Um usuário administrador deve ser capaz de gerar relatórios de vendas do sistema.   | BAIXA |
 |RF-010| Um usuário administrador deve ser capaz de cadastrar outros usuários administradores.    | BAIXA |
-|RF-011| Um usuário administrador deve ser capaz de administrar a contas e pedidos de usuários comuns para lidar com eventuais problemas, esses alterações devem possuir rastreabilidade.    | BAIXA |
+|RF-011| Um usuário administrador deve ser capaz de administrar as contas e pedidos de usuários comuns para lidar com eventuais problemas, esses alterações devem possuir rastreabilidade.    | BAIXA |
 
 ### Requisitos não Funcionais
 
