@@ -232,6 +232,47 @@ Para os testes dessa funcionalidade, foram executadas as requisições HTTP supo
 #### Teste listagens de estoque, movimentações de estoque, galpões e produtos:
 <img width="1911" height="904" alt="image" src="https://github.com/user-attachments/assets/c0b345d3-9094-4f0c-9791-a0a5a96e6fa6" />
 
+## Operações em carrinho de compras
+### Caso 1: Obter o carrinho atual se existir
+- Pré-condição: Um carrinho ativo deve existir
+- Passo de teste: Faça uma solicitação GET para api/v1/cart com o usuário autenticado
+- Resultados esperados: 200 - carrinho retornado, 404 se não há carrinho ativo.
+
+  <img width="1378" height="629" alt="Captura de Tela 2025-10-05 às 19 24 40" src="https://github.com/user-attachments/assets/8a84c130-5443-4fbb-aa79-962f3e9194fb" />
+
+
+### Caso 2: Criar um carrinho
+- Pré-condição: Um carrinho ativo não deve existir
+- Passo de teste: Faça uma solicitação POST para api/v1/cart com o usuário autenticado e com o corpo do request preenchido.
+- Resultados esperados: 200 - carrinho retornado, 400 se há carrinho ativo.
+
+  <img width="1392" height="774" alt="Captura de Tela 2025-10-05 às 20 51 48" src="https://github.com/user-attachments/assets/13c362a2-b203-4f77-9afa-9bd53c5b05da" />
+
+### Caso 3: Editar items do carrinho atual
+- Pré-condição: Um carrinho ativo deve existir
+- Passo de teste: Faça uma solicitação PATCH para api/v1/cart/cart-items com o usuário autenticado e com o corpo do request contendo os items desejados.
+- Resultados esperados: 200 - carrinho retornado, 404 se não há carrinho ativo.
+
+  <img width="1374" height="701" alt="Captura de Tela 2025-10-05 às 20 52 52" src="https://github.com/user-attachments/assets/31853da6-2df7-4fbc-a669-94cdd6d93ca2" />
+
+
+### Caso 4: Cancelar o carrinho atual
+- Pré-condição: Um carrinho ativo deve existir
+- Passo de teste: Faça uma solicitação PATCH para api/v1/cart/cancel com o usuário autenticado
+- Resultados esperados: 200 - carrinho retornado com o status cancelado, 404 se não há carrinho ativo.
+
+  <img width="1374" height="469" alt="Captura de Tela 2025-10-05 às 20 53 41" src="https://github.com/user-attachments/assets/a1467d9b-9599-46b7-bf02-c6e6e38a46c3" />
+
+
+### Caso 5: Checkout do carrinho
+- Pré-condição: Um carrinho ativo deve existir e deve possuir items
+- Passo de teste: Faça uma solicitação post para api/v1/cart/checkout com o usuário autenticado
+- Resultados esperados: 200 - carrinho retornado com o status finalizado, 404 se não há carrinho ativo, 400 se o carrinho atual não possuir items ou quantidade de items ultrapassar estoque.
+
+  <img width="1376" height="501" alt="Captura de Tela 2025-10-05 às 20 54 04" src="https://github.com/user-attachments/assets/85f02f98-34d4-4ba0-b198-2ba597ef00d5" />
+
+
+
 # Referências
 
 - Richardson, C. *Microservices Patterns*. Manning, 2019.  
