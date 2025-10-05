@@ -1,6 +1,6 @@
 # APIs e Web Services
 
-O planejamento de uma aplicação de APIs Web é uma etapa fundamental para o sucesso do projeto. Ao planejar adequadamente, é possível evitar muitos problemas e garantir que a API seja segura, escalável e eficiente. Neste projeto, foram desenvolvidos microserviços independentes que se comunicam entre si para compor uma aplicação de e-commerce robusta, formada pelos seguintes módulos: **UserService (autenticação)**, **VitrineService (catálogo de produtos)**, **EstoqueService**, **CarrinhoService** e **OrderService (pedidos e pagamentos)**.
+O planejamento de uma aplicação de APIs Web é uma etapa fundamental para o sucesso do projeto. Ao planejar adequadamente, é possível evitar muitos problemas e garantir que a API seja segura, escalável e eficiente. Neste projeto, foram desenvolvidos microserviços independentes que se comunicam entre si para compor uma aplicação de e-commerce robusta, formada pelos seguintes módulos: **UserService (autenticação)**, **VitrineService (catálogo de produtos)**, **EstoqueService (gerenciar estoque, movimentações e produtos)**, **CarrinhoService** e **OrderService (pedidos e pagamentos)**.
 
 ## Objetivos da API
 
@@ -8,7 +8,7 @@ O objetivo central da API é disponibilizar recursos para que o sistema de e-com
 
 - Garantir autenticação e autorização de usuários (UserService).
 - Disponibilizar catálogo de produtos com listagem, busca e detalhes (VitrineService).
-- Controlar e gerenciar níveis de estoque em tempo real (EstoqueService).
+- Controlar e gerenciar níveis de estoque e cadastrar produtos. (EstoqueService).
 - Possibilitar ao usuário criar e gerenciar um carrinho de compras (CarrinhoService).
 - Concretizar pedidos e processar pagamentos (OrderService).
 - Garantir integração segura, escalável e versionada entre os serviços.
@@ -18,14 +18,15 @@ O objetivo central da API é disponibilizar recursos para que o sistema de e-com
 A aplicação segue a arquitetura de microserviços, com cada serviço responsável por uma funcionalidade específica e se comunicando via APIs REST. A modelagem principal inclui as seguintes entidades:
 
 - **Usuário**: id, nome, email, senha (hash), roles.
-- **Produto**: id, nome, descrição, preço, imagens, categoria.
+- **Product**: Id (uuid), Name (string), Description (string), Price (integer), ImagesJson (string/json), Category (string), IsActive (boolean), CreatedAt (timestamp).
+- **StockItems**: ProductId (uuid), WarehouseId (uuid), Quantity (integer), Reserved (integer), UpdatedAt (timestamp).
+- **StockMoves**: Id (uuid), ProductId (uuid), WarehouseId (uuid), QtyMoved (integer), Reason(string), CreatedAt (timestamp).
+- **Warehouse**: Id (uuid), Name (string), Location (string), CreatedAt (timestamp). 
 - **Categoria**: id, nome, descrição.
-- **Estoque**: produtoId, quantidadeDisponível, reservas.
 - **Carrinho**: id, userId, itens (produtoId, quantidade).
 - **Pedido**: id, userId, itens, status, valor total, pagamento.
 
-Cada microserviço possui seu próprio banco de dados, garantindo baixo acoplamento e maior escalabilidade. A comunicação ocorre de forma síncrona via REST e, quando necessário, de forma assíncrona com eventos.
-
+Cada microserviço é encarregado de expor os endpoints para a manipulação das estruturas de dados definidas acima. Essa manipulação é a criação, alteração, deleção e recuperação desses dados persistidos em banco de dados.
 
 ## Tecnologias Utilizadas
 
@@ -52,7 +53,9 @@ A seguir, os principais endpoints de cada microserviço:
 - `GET /api/v1/vitrine/categorias` – Listar categorias.  
 - `GET /api/v1/vitrine/busca?q=termo` – Buscar produtos.  
 
-### StockItems (Estoque de produto)
+### EstoqueService
+
+#### StockItems (Estoque de produto)
 - `GET /api/v1/stock-items` – Listar estoque de produtos.
 - `GET /api/v1/stock-items/{warehouseId}/{productId}` – Consultar estoque de um produto.
 - `PUT /api/v1/stock-items/{warehouseId}/{productId}` – Atualizar estoque de um produto.
@@ -60,21 +63,21 @@ A seguir, os principais endpoints de cada microserviço:
 - `POST /api/v1/stock-items` – Criar item de estoque.  
 - `POST /api/v1/stock-items/baixa` – Confirmar baixa de estoque.  
 
-### StockMoves (Movimentação de estoque)
+#### StockMoves (Movimentação de estoque)
 - `GET /api/v1/stock-moves` – Listar movimentações de estoque.
 - `GET /api/v1/stock-moves/{id}` – Consultar movimentação de estoque.
 - `GET /api/v1/stock-moves/by-product/{productId}` – Listar movimentações de estoque filtrando por produto. 
 - `GET /api/v1/stock-moves/by-warehouse/{warehouseId}` – Listar movimentações de estoque filtrando por galpão.
 - `GET /api/v1/stock-moves/by-warehouse-product/{warehouseId}/{productId}` – Listar movimentações de estoque filtrando por galpão e produto.
 
-### Product (Produto)
+#### Product (Produto)
 - `POST /api/v1/product` – Criar produto.
 - `GET /api/v1/product` – Listar produtos.
 - `GET /api/v1/product/{id}` – Consultar daos de um produto.
 - `PUT /api/v1/product/{id}` – Atualizar dados de um produto.
 - `DELETE /api/v1/product/{id}` – Deletar um produto.
 
-### Warehouse (Galpão)
+#### Warehouse (Galpão)
 - `POST /api/v1/warehouse` – Criar galpão.
 - `GET /api/v1/warehouse` – Listar galpões.
 - `GET /api/v1/warehouse/{id}` – Consultar daos de um galpão.
