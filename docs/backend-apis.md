@@ -52,11 +52,34 @@ A seguir, os principais endpoints de cada microserviço:
 - `GET /api/v1/vitrine/categorias` – Listar categorias.  
 - `GET /api/v1/vitrine/busca?q=termo` – Buscar produtos.  
 
-### EstoqueService
-- `GET /api/v1/estoque/produtos/{id}` – Consultar estoque de um produto.  
-- `POST /api/v1/estoque/reservas` – Criar reserva de estoque.  
-- `POST /api/v1/estoque/confirmar` – Confirmar baixa de estoque.  
-- `POST /api/v1/estoque/liberar` – Liberar reserva.  
+### StockItems (Estoque de produto)
+- `GET /api/v1/stock-items` – Listar estoque de produtos.
+- `GET /api/v1/stock-items/{warehouseId}/{productId}` – Consultar estoque de um produto.
+- `PUT /api/v1/stock-items/{warehouseId}/{productId}` – Atualizar estoque de um produto.
+- `DELETE /api/v1/stock-items/{warehouseId}/{productId}` – Deleta o estoque de um produto. 
+- `POST /api/v1/stock-items` – Criar item de estoque.  
+- `POST /api/v1/stock-items/baixa` – Confirmar baixa de estoque.  
+
+### StockMoves (Movimentação de estoque)
+- `GET /api/v1/stock-moves` – Listar movimentações de estoque.
+- `GET /api/v1/stock-moves/{id}` – Consultar movimentação de estoque.
+- `GET /api/v1/stock-moves/by-product/{productId}` – Listar movimentações de estoque filtrando por produto. 
+- `GET /api/v1/stock-moves/by-warehouse/{warehouseId}` – Listar movimentações de estoque filtrando por galpão.
+- `GET /api/v1/stock-moves/by-warehouse-product/{warehouseId}/{productId}` – Listar movimentações de estoque filtrando por galpão e produto.
+
+### Product (Produto)
+- `POST /api/v1/product` – Criar produto.
+- `GET /api/v1/product` – Listar produtos.
+- `GET /api/v1/product/{id}` – Consultar daos de um produto.
+- `PUT /api/v1/product/{id}` – Atualizar dados de um produto.
+- `DELETE /api/v1/product/{id}` – Deletar um produto.
+
+### Warehouse (Galpão)
+- `POST /api/v1/warehouse` – Criar galpão.
+- `GET /api/v1/warehouse` – Listar galpões.
+- `GET /api/v1/warehouse/{id}` – Consultar daos de um galpão.
+- `PUT /api/v1/warehouse/{id}` – Atualizar dados de um galpão.
+- `DELETE /api/v1/warehouse/{id}` – Deletar um galpão.
 
 ### CarrinhoService
 - `POST /api/v1/carrinho` – Criar carrinho.  
@@ -65,12 +88,6 @@ A seguir, os principais endpoints de cada microserviço:
 - `PUT /api/v1/carrinho/itens/{id}` – Atualizar item.  
 - `DELETE /api/v1/carrinho/itens/{id}` – Remover item.  
 
-### OrderService
-- `POST /api/v1/orders` – Criar pedido.  
-- `GET /api/v1/orders/{id}` – Consultar pedido.  
-- `GET /api/v1/orders` – Listar pedidos do usuário.  
-- `POST /api/v1/orders/{id}/cancel` – Cancelar pedido.  
-- `POST /api/v1/orders/webhook` – Receber confirmação de pagamento.  
 
 ## Considerações de Segurança
 
