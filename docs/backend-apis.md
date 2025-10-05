@@ -190,7 +190,7 @@ docker ps
 | EstoqueService  | 5020  | [http://localhost:5020/swagger/index.html](http://localhost:5020/swagger/index.html) |
 | Carrinho | 5030  | [http://localhost:5030/swagger/index.html](http://localhost:5030/swagger/index.html) |
 | OrderService    | 5050  | [http://localhost:5050/swagger/index.html](http://localhost:5050/swagger/index.html) |
-| OrderService  | 5070  | [http://localhost:5070/swagger/index.html](http://localhost:5070/swagger/index.html) |
+
 
 ### Deploy em Produção EC2
 
