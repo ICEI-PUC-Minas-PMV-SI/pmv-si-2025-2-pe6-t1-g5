@@ -460,7 +460,7 @@ Atualizado em: 29/09/2025
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
 | Gabriel Amorim       | Criação do Trello e repositórios das APIs do Git da TeraBUM | 29/09/2025     | 01/10/2025 | ✔️    | 01/10/2025      |
 | Daniela Assis       | Base da API Vitrine   | 20/09/2025    | 29/09/2025 | ✔️    |   29/09/2025              |
-| AlunoY        | Histórias de usuário  | 01/01/2024     | 07/01/2005 | ⌛     |                 |
+| Lucas Brandão        | Autenticação de usuário  | 15/09/2025     | 29/09/2025 | ✔️     | 02/10/2025        |
 | AlunoK        | Personas 1  |    01/01/2024        | 12/02/2005 | ❌    |       |
 
 #### Semana 2
