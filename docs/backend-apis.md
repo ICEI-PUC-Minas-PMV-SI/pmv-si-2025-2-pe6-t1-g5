@@ -291,6 +291,54 @@ Para os testes dessa funcionalidade, foram executadas as requisições HTTP supo
 
 #### Teste listagens de estoque, movimentações de estoque, galpões e produtos:
 <img width="1911" height="904" alt="image" src="https://github.com/user-attachments/assets/c0b345d3-9094-4f0c-9791-a0a5a96e6fa6" />
+## Testes Funcionais VitrineService
+### Caso 1: Listar produtos com paginação
+- Pré-condição: Produtos cadastrados no sistema.
+- Passo de teste: Faça uma solicitação GET para api/v1/vitrine/product?page=1&pageSize=10.
+- Resultados esperados: 200 - Retorna TotalItems, Page, PageSize e Products com no máximo 10 itens.
+- Endpoint: GET /api/v1/vitrine/product
+<img width="1258" height="599" alt="Caso de Teste 1" src="https://github.com/user-attachments/assets/558d9382-1f73-4b93-a256-ee40f15bd94b" />
+
+### Caso 2: Filtrar produtos por categoria
+- Pré-condição: Produtos cadastrados pertencentes a categorias.
+- Passo de teste: Faça uma solicitação GET para api/v1/vitrine/product?category=Notebooks.
+- Resultados esperados: 200 - Todos os produtos retornados possuem Category = Notebooks. Lista vazia se não houver produtos na categoria.
+- Endpoint: GET /api/v1/vitrine/product
+<img width="1261" height="606" alt="Caso de Teste 2" src="https://github.com/user-attachments/assets/213dbea0-26ae-431c-9908-806ac56f033a" />
+
+### Caso 3: Filtrar produtos por faixa de preço
+- Pré-condição: Produtos cadastrados com preços variados.
+- Passo de teste: Faça uma solicitação GET para api/v1/vitrine/product?minPrice=100&maxPrice=500.
+- Resultados esperados: 200 - Retorna produtos com Price >= 100 e Price <= 500. Lista vazia se não houver produtos na faixa.
+- Endpoint: GET /api/v1/vitrine/product
+
+### Caso 4: Ordenar produtos por preço
+- Pré-condição: Produtos cadastrados com preços e nomes diferentes.
+- Passo de teste: Faça uma solicitação GET para api/v1/vitrine/product?sortBy=price&sortOrder=asc.
+- Resultados esperados: 200 - Produtos retornados em ordem ascendente de preço. Suporte a sortOrder=asc/desc.
+- Endpoint: GET /api/v1/vitrine/product
+<img width="1256" height="611" alt="Caso de Teste 3" src="https://github.com/user-attachments/assets/c7f33bac-1beb-4352-ab3c-7ff7dca5e86f" />
+
+### Caso 5: Consultar detalhes de produto existente
+- Pré-condição: Produto existente cadastrado.
+- Passo de teste: Faça uma solicitação GET para api/v1/vitrine/product/{id} com um id válido.
+- Resultados esperados: 200 - Retorna Id, Name, Price, Category, Description, ImagesJson e IsActive.
+- Endpoint: GET /api/v1/vitrine/product/{id}
+<img width="1250" height="402" alt="Caso de Teste 4" src="https://github.com/user-attachments/assets/03672668-95a8-4e0b-9f2a-a985c1da879e" />
+
+### Caso 6: Consultar produto inexistente
+- Pré-condição: Produto inexistente.
+- Passo de teste: Faça uma solicitação GET para api/v1/vitrine/product/{id} com um id inválido.
+- Resultados esperados: 404 - Produto não encontrado.
+- Endpoint: GET /api/v1/vitrine/product/{id}
+<img width="1256" height="347" alt="Caso de Teste 6" src="https://github.com/user-attachments/assets/1fb4520a-0b1c-4875-b7cc-a48214c26f58" />
+
+### Caso 7: Consultar estoque de um produto existente
+- Pré-condição: Produto existente e vinculado a estoque em StockItems.
+- Passo de teste: Faça uma solicitação GET para api/v1/vitrine/product/{id}/stock com um id válido.
+- Resultados esperados: 200 - Retorna lista de StockItems com WarehouseId, Quantity e Location. 404 se não houver estoque.
+- Endpoint: GET /api/v1/vitrine/product/{id}/stock
+<img width="1259" height="386" alt="Caso de Teste 7" src="https://github.com/user-attachments/assets/925e56e5-596c-4edc-be70-caa79c794679" />
 
 ## Operações em carrinho de compras
 ### Caso 1: Obter o carrinho atual se existir
@@ -395,7 +443,7 @@ Atualizado em: 29/09/2025
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
 | Gabriel Amorim       | Criação do Trello e repositórios das APIs do Git da TeraBUM | 29/09/2025     | 01/10/2025 | ✔️    | 01/10/2025      |
-| AlunaZ        | Objetivos    | 03/02/2024     | 10/02/2024 | 📝    |                 |
+| Daniela Assis       | Base da API Vitrine   | 20/09/2025    | 29/09/2025 | ✔️    |   29/09/2025              |
 | AlunoY        | Histórias de usuário  | 01/01/2024     | 07/01/2005 | ⌛     |                 |
 | AlunoK        | Personas 1  |    01/01/2024        | 12/02/2005 | ❌    |       |
 
@@ -406,7 +454,7 @@ Atualizado em: 04/10/2025
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
 | Gabriel Amorim      | Desenvolvimento do Micro-serviço de Pagamento (API)   | 02/10/2025     | 05/10/2025 | ✔️    | 04/10/2025      |
-| AlunaZ        | CSS unificado    | 03/02/2024     | 10/03/2024 | 📝    |                 |
+| Daniela Assis       | Conexão da API Vitrine com Supase e Documentação   | 30/09/2025    | 05/10/2025 | ✔️    |   05/10/2025              |
 | AlunoY        | Página de login  | 01/02/2024     | 07/03/2024 | ⌛     |                 |
 | AlunoK        | Script de login  |  01/01/2024    | 12/03/2024 | ❌    |       |
 
@@ -415,4 +463,3 @@ Legenda:
 - 📝: em execução
 - ⌛: atrasado
 - ❌: não iniciado
-
