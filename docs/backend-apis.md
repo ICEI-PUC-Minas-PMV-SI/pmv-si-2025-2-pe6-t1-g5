@@ -278,6 +278,7 @@ Para os testes dessa funcionalidade, foram executadas as requisições HTTP supo
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/66a470ef-e9b6-4cd7-9abd-1615a859bf2d" />
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9af277c7-e7bf-4cfc-acee-7d293d5d04d5" />
+
 ### Teste RF-002
 
 Para os testes dessa funcionalidade, foram executadas as requisições HTTP suportadas pelo EstoqueService. As requisições requerem, como medida de segurança, a função de Administrador para que a API realize as operações.
