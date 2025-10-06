@@ -273,15 +273,46 @@ Para os testes dessa funcionalidade, foram executadas as requisições HTTP supo
 
 ### Teste relacionados as APIs do micro-serviço Pagamento 
 #### Criar pagamento
+
+- Endpoint: POST /api/v1/payments
+- Pré-condição: Um pedido válido deve existir no sistema.
+- Request body (JSON):
+
 <img width="1310" height="729" alt="image" src="https://github.com/user-attachments/assets/39ba18a1-3001-430a-a9e0-9c30ee55a186" />
+
+- Passo de teste: Executar a requisição POST com dados válidos de pagamento.
+- Resultado esperado:
+Código HTTP: 201 Created
+
 <img width="1282" height="855" alt="image" src="https://github.com/user-attachments/assets/e04bdedb-9a98-43a7-a000-3302ef45d1bd" />
 
+
+Retorno com os dados do pagamento, incluindo id, orderId, status e amount.
 #### Consultar pagamento por pedido
+
+- Endpoint: GET /api/v1/payments/{orderId}
+- Pré-condição: Pagamento associado ao orderId deve existir.
+- Passo de teste: Executar a requisição GET passando o orderId.
+- Resultado esperado:
+Código HTTP: 200 OK
+Retorno com os dados do pagamento correspondente ao pedido.
+
 <img width="1279" height="885" alt="image" src="https://github.com/user-attachments/assets/3d00d030-8f74-4a65-ab84-6534b822a017" />
 <img width="1284" height="618" alt="image" src="https://github.com/user-attachments/assets/aac5e4a4-6ff0-4668-8aa2-a821c1dc00e7" />
 
 #### Atualizar status do pagamento
+
+- Endpoint: PATCH /api/v1/payments/{paymentId}
+- Pré-condição: Pagamento existente no sistema.
+- Request body (JSON): PAGO/AGUARDANDO PAGAMENTO/PAGAMENTO NEGADO
 <img width="1512" height="170" alt="image" src="https://github.com/user-attachments/assets/d01b7e49-87fe-411a-ade1-4f3818c9c7a8" />
+
+Observação: A API aceita o corpo como string simples contendo o novo status do pagamento.
+
+- Passo de teste: Executar PATCH para atualizar o status do pagamento.
+- Resultado esperado:
+Código HTTP: 200 OK
+- Retorno com os dados do pagamento atualizado, mostrando o novo status.
 <img width="1280" height="646" alt="image" src="https://github.com/user-attachments/assets/5867b893-3e9c-405c-b949-3d2b1f257c73" />
 
 # Referências
