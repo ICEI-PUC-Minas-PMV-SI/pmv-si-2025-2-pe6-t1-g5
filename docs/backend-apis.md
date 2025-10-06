@@ -254,12 +254,6 @@ Para os testes dessa funcionalidade, foram executadas as requisições HTTP supo
 #### Teste de um usuário nível "user" ou "manager" ou "Administrador" tentando atualizar os seus própios dados com a senha atual errada:
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/70e23ecd-94cf-43aa-98f9-cc7ef9f19fad" />
 
-#### Teste de um usuário nível "Administrador" atualizando os dados de outro usuário:
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6756deb9-6efa-4e5e-ad48-42431d520d24" />
-
-#### Teste de um usuário nível "Administrador" atualizando o nível de outro usuário:
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/76ee4b1c-9185-4f4f-b3b3-12d33e5e13b2" />
-
 #### Teste de um usuário nível "user" ou "manager" atualizando o seu nível de usuário:
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f6341f04-4c9e-4511-b82a-c862e589cd0d" />
 
@@ -418,6 +412,16 @@ Observação: A API aceita o corpo como string simples contendo o novo status do
 Código HTTP: 200 OK
 - Retorno com os dados do pagamento atualizado, mostrando o novo status.
 <img width="1280" height="646" alt="image" src="https://github.com/user-attachments/assets/5867b893-3e9c-405c-b949-3d2b1f257c73" />
+
+### Teste RF-010
+
+#### Teste de um usuário nível "Administrador" atualizando o nível de outro usuário:
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/76ee4b1c-9185-4f4f-b3b3-12d33e5e13b2" />
+
+### Teste RF-011
+
+#### Teste de um usuário nível "Administrador" atualizando os dados de outro usuário:
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6756deb9-6efa-4e5e-ad48-42431d520d24" />
 
 # Referências
 
