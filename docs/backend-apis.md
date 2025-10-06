@@ -224,51 +224,65 @@ Utilize o Nginx como proxy reverso, mapeando domínios personalizados (por exemp
 Para os testes dessa funcionalidade, foram executadas as requisições HTTP suportadas pelo UserService. As requisições requerem, como medida de segurança.
 
 #### Teste criação de um novo usuário:
+Resultados esperados: 200 - Retorna o token do usuário.
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/33e66f13-9689-444d-bfa5-87396a9d70c2" />
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6cba21e7-24b5-4478-8c52-69f1566b9859" />
 
 #### Teste de login do usuário:
+Resultados esperados: 200 - Retorna o token do usuário.
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/820c9965-cc99-4141-9864-0e800e154c74" />
 
 #### Teste de login de usuário que não existe ou com o password errado:
+Resultados esperados: 401 - Retorna credenciais inválidas.
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9c3623ed-e901-40e7-adde-37aeaf05af65" />
 
 #### Teste de um usuário nível "user" ou "manager" buscando os seus próprios dados:
+Resultados esperados: 200 - Retorna os dados do usuário.
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f9b2f4fd-e0f9-45bc-abf9-f01f0333c94a" />
 
 #### Teste de um usuário nível "user" ou "manager" buscando os dados de outro usuário:
+Resultados esperados: 403 - Sem retorno de informações.
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/919e7a57-38fd-4dd9-95b9-665c76ec9914" />
 
 #### Teste de um usuário nível "Administrador" buscando os dados de todos os usuários:
+Resultados esperados: 200 - Retorna os dados de todos os usuários.
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e1e71c58-894c-44f4-843a-f8e1758e6db3" />
 
 #### Teste de um usuário nível "user" ou "manager" buscando os dados de todos os usuários:
+Resultados esperados: 401 - Sem retorno de informações.
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/64aa85ca-c68c-483f-b03f-b21ee5269aff" />
 
 #### Teste de um usuário nível "user" ou "manager" atualizando os seus própios dados:
+Resultados esperados: 204 - Sem retorno de informações.
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4a921aef-1fcc-44e3-85aa-b02d552fcf46" />
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/116ac953-07dd-4edd-8c14-beb60a474818" />
 
 #### Teste de um usuário nível "user" ou "manager" ou "Administrador" tentando atualizar os seus própios dados com a senha atual errada:
+Resultados esperados: 400 - Senha atual inválida.
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/70e23ecd-94cf-43aa-98f9-cc7ef9f19fad" />
 
 #### Teste de um usuário nível "user" ou "manager" atualizando o seu nível de usuário:
+Resultados esperados: 403 - Sem retorno de informações.
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f6341f04-4c9e-4511-b82a-c862e589cd0d" />
 
 #### Teste de um usuário nível "Administrador" atualizando o nível de outro usuário para um nível que não existe:
+Resultados esperados: 400 - Role inválida. Roles permitidas: User, Administrador, Manager.
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/241f784b-f364-441a-a395-865f55c6a777" />
 
 #### Teste de um usuário nível "user" ou "manager" apagando a conta de um outro usuário:
+Resultados esperados: 403 - Sem retorno de informações.
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8bdb6758-da25-4db9-9a5a-f30bc1994af5" />
 
 #### Teste de um usuário nível "user" ou "manager" apagando sua própia conta:
+Resultados esperados: 204 - Sem retorno de informações.
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0781d9a6-20cf-46d8-828e-5007f4a61f1e" />
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/fc5da91d-390e-4136-a06c-770c057e1640" />
 
 #### Teste de um usuário nível "Administrador" apagando uma conta qualquer:
+Resultados esperados: 204 - Sem retorno de informações.
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/66a470ef-e9b6-4cd7-9abd-1615a859bf2d" />
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9af277c7-e7bf-4cfc-acee-7d293d5d04d5" />
@@ -416,11 +430,13 @@ Código HTTP: 200 OK
 ### Teste RF-010
 
 #### Teste de um usuário nível "Administrador" atualizando o nível de outro usuário:
+Resultados esperados: 200 - Retorna Usuário "email" agora é "Role".
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/76ee4b1c-9185-4f4f-b3b3-12d33e5e13b2" />
 
 ### Teste RF-011
 
 #### Teste de um usuário nível "Administrador" atualizando os dados de outro usuário:
+Resultados esperados: 204 - Sem retorno de informações.
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6756deb9-6efa-4e5e-ad48-42431d520d24" />
 
 # Referências
