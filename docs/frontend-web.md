@@ -107,6 +107,7 @@ Tailwind CSS: https://tailwindcss.com/
 React Router: https://reactrouter.com/
 
 Boas práticas de UX e UI para e-commerce
+https://www.made2web.com/blog/10-boas-praticas-de-ux-design-para-implementar-hoje-mesmo
 
 # Planejamento
 
