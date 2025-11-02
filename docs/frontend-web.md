@@ -142,24 +142,44 @@ A implantação da aplicação distribuída foi planejada para garantir escalabi
 
 Etapas de Implantação
 
-Definição de Requisitos
+### 1. Definição de Requisitos
 
-Hardware: Servidor ou instância com no mínimo 2 vCPUs, 2 GB de RAM e 10 GB de armazenamento.
+**Hardware:**
+- Servidor ou instância com no mínimo **2 vCPUs**, **2 GB de RAM** e **10 GB de armazenamento**.
 
-Software: Node.js (versão LTS recomendada), NPM ou Yarn, e um gerenciador de processos como PM2 ou Docker.
+**Software:**
+- **Node.js** (versão **LTS recomendada**)  
+- **NPM** ou **Yarn**  
+- **Gerenciador de processos:** PM2 ou **Docker**
 
-Rede: Certificado SSL ativo e acesso via HTTPS para todas as comunicações.
+**Rede:**
+- **Certificado SSL ativo**
+- Acesso via **HTTPS** para todas as comunicações
 
-Escolha da Plataforma de Hospedagem
-Opte por uma solução de hospedagem confiável que permita fácil escalabilidade:
+---
+### 2. Escolha da Plataforma de Hospedagem
 
-Opções recomendadas: AWS (EC2, Amplify, S3 + CloudFront), Vercel, Netlify ou DigitalOcean.
+Opte por uma solução de hospedagem confiável que permita fácil **escalabilidade** e **integração contínua (CI/CD)**.
 
-Critérios de escolha: custo-benefício, suporte a CI/CD e integração com GitHub.
+**Opções recomendadas:**
+- AWS (**EC2**, **Amplify**, **S3 + CloudFront**)  
+- **Vercel**  
+- **Netlify**  
+- **DigitalOcean**
 
-Configuração do Ambiente
+**Critérios de escolha:**
+- Custo-benefício  
+- Suporte a **CI/CD**  
+- Integração direta com **GitHub**
 
-Clone o repositório do projeto.
+---
+
+### 3. Configuração do Ambiente
+
+1. **Clone o repositório do projeto:**
+   ```bash
+   git clone https://github.com/seu-usuario/terabuuum-frontend.git
+   cd terabuuum-frontend
 
 Instale as dependências:
 
