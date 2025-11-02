@@ -73,13 +73,123 @@ A interface foi desenvolvida em **React**, com foco em **usabilidade e design re
 
 ## Implantação
 
-[Instruções para implantar a aplicação distribuída em um ambiente de produção.]
+A implantação da aplicação distribuída foi planejada para garantir escalabilidade, segurança e facilidade de manutenção em ambientes de produção. Abaixo estão as etapas recomendadas para realizar o deploy do **front-end web da TeraBuum**.
 
-1. Defina os requisitos de hardware e software necessários para o ambiente de produção.
-2. Escolha uma plataforma de hospedagem adequada, como nuvem ou servidor dedicado.
-3. Configure o ambiente, instalando dependências e configurando variáveis de ambiente.
-4. Faça o deploy da aplicação no ambiente escolhido, seguindo instruções específicas da plataforma.
-5. Realize testes para garantir que a aplicação esteja funcionando corretamente.
+### Etapas de Implantação
+
+1. **Definição de Requisitos**  
+   - **Hardware:** Servidor ou instância com no mínimo **2 vCPUs**, **2 GB de RAM** e **10 GB de armazenamento**.  
+   - **Software:** Node.js (versão LTS recomendada), NPM ou Yarn, e um gerenciador de processos como **PM2** ou **Docker**.  
+   - **Rede:** Certificado **SSL ativo** e acesso via **HTTPS** para todas as comunicações.
+
+2. **Escolha da Plataforma de Hospedagem**  
+   Opte por uma solução de hospedagem confiável que permita fácil escalabilidade:  
+   - **Opções recomendadas:** AWS (EC2, Amplify, S3 + CloudFront), **Vercel**, **Netlify** ou **DigitalOcean**.  
+   - **Critérios de escolha:** custo-benefício, suporte a **CI/CD** e integração com **GitHub**.
+
+3. **Configuração do Ambiente**  
+   - Clone o repositório do projeto:  
+     ```bash
+     git clone https://github.com/TeraBum/frontend-app.git
+     cd frontend-app
+     ```
+   - Instale as dependências:  
+     ```bash
+     npm install
+     ```
+   - Crie e configure o arquivo `.env` com variáveis de ambiente (URLs de API, chaves de acesso, etc.).  
+   - Compile o projeto para produção:  
+     ```bash
+     npm run build
+     ```
+
+4. **Deploy da Aplicação**  
+   - Faça o upload dos arquivos gerados na pasta `/dist` ou `/build` para o servidor ou serviço de hospedagem.  
+   - Configure o servidor web (Nginx, Apache ou outro) para servir os arquivos estáticos.  
+   - Em ambientes automatizados (**CI/CD**), configure pipelines para o **deploy contínuo** a partir do GitHub.
+
+5. **Validação Pós-Deploy**  
+   - Acesse o domínio configurado e valide o funcionamento das principais rotas.  
+   - Teste componentes interativos (**carrinho**, **login**, **checkout**, **modais**).  
+   - Verifique o console do navegador e o log do servidor para identificar possíveis erros.  
+   - Certifique-se de que o site esteja **responsivo** e com **carregamento otimizado**.
+
+---
+
+### 🐳 Implantação via Docker (opcional)
+
+Para implantar a aplicação usando containers Docker, siga os passos abaixo:
+
+1. Crie um arquivo **Dockerfile** na raiz do projeto:
+
+   ```dockerfile
+   # Etapa de build
+   FROM node:18-alpine AS builder
+   WORKDIR /app
+   COPY package*.json ./
+   RUN npm install
+   COPY . .
+   RUN npm run build
+
+   # Etapa de produção
+   FROM nginx:alpine
+   COPY --from=builder /app/dist /usr/share/nginx/html
+   EXPOSE 80
+   CMD ["nginx", "-g", "daemon off;"]
+
+
+A implantação da aplicação distribuída foi planejada para garantir escalabilidade, segurança e facilidade de manutenção em ambientes de produção. Abaixo estão as etapas recomendadas para realizar o deploy do front-end web da TeraBuum.
+
+Etapas de Implantação
+
+Definição de Requisitos
+
+Hardware: Servidor ou instância com no mínimo 2 vCPUs, 2 GB de RAM e 10 GB de armazenamento.
+
+Software: Node.js (versão LTS recomendada), NPM ou Yarn, e um gerenciador de processos como PM2 ou Docker.
+
+Rede: Certificado SSL ativo e acesso via HTTPS para todas as comunicações.
+
+Escolha da Plataforma de Hospedagem
+Opte por uma solução de hospedagem confiável que permita fácil escalabilidade:
+
+Opções recomendadas: AWS (EC2, Amplify, S3 + CloudFront), Vercel, Netlify ou DigitalOcean.
+
+Critérios de escolha: custo-benefício, suporte a CI/CD e integração com GitHub.
+
+Configuração do Ambiente
+
+Clone o repositório do projeto.
+
+Instale as dependências:
+
+npm install
+
+
+Crie e configure o arquivo .env com variáveis de ambiente (URLs de API, chaves de acesso, etc.).
+
+Compile o projeto para produção:
+
+npm run build
+
+
+Deploy da Aplicação
+
+Faça o upload dos arquivos gerados na pasta /dist ou /build para o servidor ou serviço de hospedagem.
+
+Configure o servidor web (Nginx, Apache ou outro) para servir os arquivos estáticos.
+
+Em ambientes automatizados (CI/CD), configure pipelines para o deploy contínuo a partir do GitHub.
+
+Validação Pós-Deploy
+
+Acesse o domínio configurado e valide o funcionamento das principais rotas.
+
+Teste componentes interativos (carrinho, login, checkout, modais).
+
+Verifique o console do navegador e o log do servidor para identificar possíveis erros.
+
+Certifique-se de que o site esteja responsivo e com carregamento otimizado.
 
 ---
 
