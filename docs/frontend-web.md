@@ -26,7 +26,7 @@ A interface foi desenvolvida em **React**, com foco em **usabilidade e design re
 ---
 
 ### Design Visual
-[TeraBum.pdf](https://github.com/user-attachments/files/23293526/TeraBum.pdf)
+<img width="4000" height="2250" alt="TeraBum-1" src="https://github.com/user-attachments/assets/0019ed26-c25a-4507-8dcb-9d520d477daa" />
 
 #### Paleta de cores
 - **Primary:** `#24DBC5` – botões de ação, destaques e links importantes.
