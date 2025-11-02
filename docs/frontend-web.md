@@ -1,6 +1,6 @@
 # Front-end Web
 
-**TeraBuum – Plataforma de E-commerce**
+**TeraBum – Plataforma de E-commerce**
 
 Projeto de interface web para uma plataforma de e-commerce voltada para venda de produtos de informática, como kits de hardware, periféricos e acessórios. O objetivo é fornecer uma experiência de compra moderna, intuitiva e responsiva, permitindo que o usuário visualize produtos, adicione itens ao carrinho, escolha métodos de pagamento e finalize pedidos de forma segura.
 
@@ -216,14 +216,50 @@ npm run build
 ---
 
 ## Testes
+### API VitrineService
 
-[Descreva a estratégia de teste, incluindo tipos de teste e ferramentas.]
+**Caso de Teste 1 – Busca de Produto na Home**
 
-1. Crie casos de teste cobrindo todos os requisitos funcionais e não funcionais.
-2. Implemente testes unitários para funções e classes individuais.
-3. Realize testes de integração para verificar a interação entre componentes.
-4. Execute testes de carga para avaliar desempenho sob demanda.
-5. Utilize frameworks de teste e ferramentas de automação para agilizar o processo.
+**Objetivo:**  
+Verificar se o usuário consegue buscar por um produto (exemplo: *notebook*) na barra de pesquisa da página inicial e obter resultados correspondentes.
+
+| Item | Descrição |
+|------|------------|
+| **Tipo de teste** | Funcional / Integração |
+| **Pré-condições** | Página Home carregada corretamente. Conexão com a API de produtos ativa. |
+| **Passos** | 1. Acessar a página Home.<br>2. Localizar a barra de busca.<br>3. Digitar “notebook” e pressionar Enter.<br>4. Aguardar exibição dos resultados. |
+| **Resultado Esperado** | A página deve exibir produtos cujo nome ou descrição contenha o termo “notebook”. Nenhum erro deve ser apresentado. |
+
+
+---
+
+**Caso de Teste 2 – Filtro por Categoria na Home**
+
+**Objetivo:**  
+Validar se, ao clicar em uma categoria (exemplo: *Eletrônicos*), o usuário é redirecionado para a página de produtos com o filtro aplicado automaticamente.
+
+| Item | Descrição |
+|------|------------|
+| **Tipo de teste** | Funcional / Integração |
+| **Pré-condições** | Página Home carregada. Categorias listadas e clicáveis. |
+| **Passos** | 1. Acessar a página Home.<br>2. Clicar na categoria “Eletrônicos”.<br>3. Verificar o redirecionamento para a página de produtos.<br>4. Conferir se apenas produtos da categoria “Eletrônicos” estão visíveis. |
+| **Resultado Esperado** | O usuário é redirecionado para a página de produtos, que exibe apenas itens da categoria selecionada. |
+
+
+---
+
+**Caso de Teste 3 – Ordenação e Filtro de Preço na Página de Produtos**
+
+**Objetivo:**  
+Garantir que a funcionalidade de ordenação e filtro de preço funcionem corretamente.
+
+| Item | Descrição |
+|------|------------|
+| **Tipo de teste** | Funcional / Integração |
+| **Pré-condições** | Página de produtos carregada com a lista completa. |
+| **Passos** | 1. Acessar a página de produtos.<br>2. Selecionar a opção de ordenação “Preço: menor para maior”.<br>3. Definir o filtro de preço máximo em **R$1000**.<br>4. Aplicar o filtro e verificar os resultados. |
+| **Resultado Esperado** | A listagem deve mostrar apenas produtos com valor até **R$1000**, ordenados do menor para o maior preço. Nenhum erro deve ocorrer na interface. |
+
 
 ---
 
