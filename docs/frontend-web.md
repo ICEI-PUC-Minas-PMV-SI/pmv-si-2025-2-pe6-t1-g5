@@ -49,8 +49,16 @@ A interface foi desenvolvida em **React**, com foco em **usabilidade e design re
 
 ## Fluxo de Dados
 <img width="1058" height="471" alt="Fluxo de Dados" src="https://github.com/user-attachments/assets/20bedc8b-bd59-4f7d-945e-0d22729cb5cd" />
-
-
+O fluxo de dados acima representa o caminho percorrido pelo usuário desde o acesso inicial até a finalização da compra:
+1. Home: ponto de entrada do site, onde o usuário pode navegar para a página de produtos.
+2. Produtos: exibe o catálogo de itens disponíveis. O usuário pode visualizar detalhes específicos de cada produto.
+3. Detalhes do Produto: apresenta informações mais completas (descrição, preço, estoque) e permite adicionar o item ao Carrinho.
+4. Carrinho: reúne os produtos selecionados e direciona o usuário para o processo de Login/Criação de Conta antes de prosseguir com o pagamento.
+5. Login/Criar Conta: se o usuário ainda não estiver autenticado, ele precisa se registrar ou entrar em sua conta.
+5.1 Sim: após login bem-sucedido, o usuário é redirecionado para a etapa de Pagamento.
+5.2 Não: pode optar por Continuar comprando, retornando à página de Produtos.
+6. Pagamento: etapa final, onde o usuário insere as informações de pagamento e conclui o pedido.
+Esse fluxo garante uma navegação intuitiva e orientada, facilitando o processo de compra e promovendo a conversão no e-commerce.
 
 ---
 
