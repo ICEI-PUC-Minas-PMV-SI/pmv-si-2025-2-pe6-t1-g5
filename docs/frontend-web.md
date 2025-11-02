@@ -26,6 +26,7 @@ A interface foi desenvolvida em **React**, com foco em **usabilidade e design re
 ---
 
 ### Design Visual
+[TeraBum.pdf](https://github.com/user-attachments/files/23293526/TeraBum.pdf)
 
 #### Paleta de cores
 - **Primary:** `#24DBC5` – botões de ação, destaques e links importantes.
@@ -47,8 +48,9 @@ A interface foi desenvolvida em **React**, com foco em **usabilidade e design re
 ---
 
 ## Fluxo de Dados
+<img width="1058" height="471" alt="Fluxo de Dados" src="https://github.com/user-attachments/assets/20bedc8b-bd59-4f7d-945e-0d22729cb5cd" />
 
-[Diagrama ou descrição do fluxo de dados na aplicação.]
+
 
 ---
 
