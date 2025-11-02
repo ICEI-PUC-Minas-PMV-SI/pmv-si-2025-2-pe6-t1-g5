@@ -173,24 +173,6 @@ Compile o projeto para produção:
 npm run build
 
 
-Deploy da Aplicação
-
-Faça o upload dos arquivos gerados na pasta /dist ou /build para o servidor ou serviço de hospedagem.
-
-Configure o servidor web (Nginx, Apache ou outro) para servir os arquivos estáticos.
-
-Em ambientes automatizados (CI/CD), configure pipelines para o deploy contínuo a partir do GitHub.
-
-Validação Pós-Deploy
-
-Acesse o domínio configurado e valide o funcionamento das principais rotas.
-
-Teste componentes interativos (carrinho, login, checkout, modais).
-
-Verifique o console do navegador e o log do servidor para identificar possíveis erros.
-
-Certifique-se de que o site esteja responsivo e com carregamento otimizado.
-
 ---
 
 ## Testes
