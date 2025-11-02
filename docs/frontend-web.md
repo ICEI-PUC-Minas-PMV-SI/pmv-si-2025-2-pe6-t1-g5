@@ -178,8 +178,8 @@ Opte por uma solução de hospedagem confiável que permita fácil **escalabilid
 
 1. **Clone o repositório do projeto:**
    ```bash
-   git clone https://github.com/seu-usuario/terabuuum-frontend.git
-   cd terabuuum-frontend
+   git clone https://github.com/seu-usuario/terabum-frontend.git
+   cd terabum-frontend
 
 Instale as dependências:
 
