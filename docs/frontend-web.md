@@ -26,6 +26,21 @@ A interface foi desenvolvida em **React**, com foco em **usabilidade e design re
 ##### PRODUTOS
 <img width="1024" height="1536" alt="ChatGPT Image 2 de nov  de 2025, 21_18_05" src="https://github.com/user-attachments/assets/39cefeca-9733-4384-ae61-becb8d607e89" />
 
+#### CARRINHO
+<img width="1024" height="1536" alt="ChatGPT Image 2 de nov  de 2025, 22_15_23" src="https://github.com/user-attachments/assets/7584c64c-0393-4834-b38f-2e6fda1e5983" />
+
+#### CONFERÊNCIA ANTES DO PAGAMENTO
+<img width="1024" height="1536" alt="ChatGPT Image 2 de nov  de 2025, 22_11_52" src="https://github.com/user-attachments/assets/6a795bac-c338-4d3e-8af2-af7b7773d93a" />
+
+#### LOGIN
+<img width="1024" height="1024" alt="ChatGPT Image 2 de nov  de 2025, 22_27_01" src="https://github.com/user-attachments/assets/e4d838a7-a7c9-4e50-a000-f0b6f9cd52da" />
+
+#### REGISTRAR SUA CONTA
+<img width="1024" height="1536" alt="ChatGPT Image 2 de nov  de 2025, 22_21_43" src="https://github.com/user-attachments/assets/04662cdf-cbcd-484c-99b4-62db18221461" />
+
+#### ESTOQUE
+<img width="1024" height="1536" alt="ChatGPT Image 2 de nov  de 2025, 22_18_51" src="https://github.com/user-attachments/assets/de83c164-94e3-4c59-a605-7b3f0f0e22bf" />
+
 ---
 
 ### Design Visual
