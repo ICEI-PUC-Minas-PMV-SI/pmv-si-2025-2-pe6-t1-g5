@@ -233,6 +233,9 @@ Verificar se o usuário consegue buscar por um produto (exemplo: *notebook*) na 
 | **Passos** | 1. Acessar a página Home.<br>2. Localizar a barra de busca.<br>3. Digitar “notebook” e pressionar Enter.<br>4. Aguardar exibição dos resultados. |
 | **Resultado Esperado** | A página deve exibir produtos cujo nome ou descrição contenha o termo “notebook”. Nenhum erro deve ser apresentado. |
 
+Evidência:
+
+<img width="789" height="545" alt="Captura de Tela 2025-11-02 às 21 52 25" src="https://github.com/user-attachments/assets/91389713-d95e-4b29-b446-2062e6be5a44" />
 
 ---
 
@@ -248,6 +251,14 @@ Validar se, ao clicar em uma categoria (exemplo: *Eletrônicos*), o usuário é 
 | **Passos** | 1. Acessar a página Home.<br>2. Clicar na categoria “Hardware”.<br>3. Verificar o redirecionamento para a página de produtos.<br>4. Conferir se apenas produtos da categoria “Hardware” estão visíveis. |
 | **Resultado Esperado** | O usuário é redirecionado para a página de produtos, que exibe apenas itens da categoria selecionada. |
 
+Evidência:
+<img width="1368" height="358" alt="Captura de Tela 2025-11-02 às 21 38 27" src="https://github.com/user-attachments/assets/89c065d1-8053-4809-bd46-74c0e983af58" />
+Depois de clicar em celulares
+<img width="1381" height="511" alt="Captura de Tela 2025-11-02 às 21 37 09" src="https://github.com/user-attachments/assets/a3182935-a166-4e40-9021-9f07cabd3ac8" />
+
+
+
+
 
 ---
 
@@ -262,6 +273,9 @@ Garantir que a funcionalidade de ordenação e filtro de preço funcionem corret
 | **Pré-condições** | Página de produtos carregada com a lista completa. |
 | **Passos** | 1. Acessar a página de produtos.<br>2. Selecionar a opção de ordenação “Preço: menor para maior”.<br>3. Definir o filtro de preço máximo em **R$1000**.<br>4. Aplicar o filtro e verificar os resultados. |
 | **Resultado Esperado** | A listagem deve mostrar apenas produtos com valor até **R$1000**, ordenados do menor para o maior preço. Nenhum erro deve ocorrer na interface. |
+Evidência:
+<img width="1392" height="494" alt="Captura de Tela 2025-11-02 às 21 49 41" src="https://github.com/user-attachments/assets/f57ca2f3-3933-426e-b3e4-cbd88a88a001" />
+
 
 
 ---
