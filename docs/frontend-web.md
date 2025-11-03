@@ -273,6 +273,7 @@ Garantir que a funcionalidade de ordenação e filtro de preço funcionem corret
 | **Pré-condições** | Página de produtos carregada com a lista completa. |
 | **Passos** | 1. Acessar a página de produtos.<br>2. Selecionar a opção de ordenação “Preço: menor para maior”.<br>3. Definir o filtro de preço máximo em **R$1000**.<br>4. Aplicar o filtro e verificar os resultados. |
 | **Resultado Esperado** | A listagem deve mostrar apenas produtos com valor até **R$1000**, ordenados do menor para o maior preço. Nenhum erro deve ocorrer na interface. |
+
 Evidência:
 <img width="1392" height="494" alt="Captura de Tela 2025-11-02 às 21 49 41" src="https://github.com/user-attachments/assets/f57ca2f3-3933-426e-b3e4-cbd88a88a001" />
 
@@ -293,6 +294,40 @@ Garantir que a funcionalidade de crud de estoque e de produto funciona e está p
 
 Vídeo evidência do teste:
 https://github.com/user-attachments/assets/b371da78-787c-41c1-8860-66f42ee0753a
+
+**Caso de Teste 5 – Adicionar item ao carrinho**
+
+**Objetivo:**  
+Verificar se o usuário consegue adicionar um item ao carrinho
+
+| Item                   | Descrição                                                                                                                      |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| **Tipo de teste**      | Funcional / Integração                                                                                                         |
+| **Pré-condições**      | Usuário logado                                                                                                                 |
+| **Passos**             | 1. Acessar a página de Produtos<br>2. Localizar o produto desejado<br>3. Clicar em Adicionar ao Carrinho.                      |
+| **Resultado Esperado** | A interface irá notifcar o usuário que o produto foi adicionado e<br>a tela de carrinho agora irá exibir o carrinho com o item |
+
+Evidência:
+
+<img width="1068" height="556" alt="Captura de Tela 2025-11-02 às 22 02 28" src="https://github.com/user-attachments/assets/0611bc80-7df4-4858-8b2a-2fa40db23dcb" />
+
+
+**Caso de Teste 6 – Fazer checkout do carrinho**
+
+**Objetivo:**  
+Verificar se o usuário consegue realizar o checkout
+
+| Item                   | Descrição                                                            |
+| ---------------------- | -------------------------------------------------------------------- |
+| **Tipo de teste**      | Funcional / Integração                                               |
+| **Pré-condições**      | Usuário com carrinho ativo                                           |
+| **Passos**             | 1. Acessar a página de carrinho<br>2. Clicar em Finalizar Compra<br> |
+| **Resultado Esperado** | A interface irá notifcar o usuário que o carrinho foi finalizado     |
+
+Evidência:
+
+<img width="1359" height="444" alt="Captura de Tela 2025-11-02 às 22 08 55" src="https://github.com/user-attachments/assets/02639faf-4198-4842-8b81-4bcde1bb8440" />
+
 
 # Referências
 
