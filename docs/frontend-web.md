@@ -234,7 +234,6 @@ npm run build
 ---
 
 ## Testes
-### API VitrineService
 
 **Caso de Teste 1 – Busca de Produto na Home**
 
@@ -344,6 +343,52 @@ Verificar se o usuário consegue realizar o checkout
 Evidência:
 
 <img width="1359" height="444" alt="Captura de Tela 2025-11-02 às 22 08 55" src="https://github.com/user-attachments/assets/02639faf-4198-4842-8b81-4bcde1bb8440" />
+
+---
+**Caso de Teste 7 – Fazer Login**
+
+**Objetivo:**  
+Verificar se o usuário consegue realizar o login
+
+| Item                   | Descrição                                                                       |
+| ---------------------- | ------------------------------------------------------------------------------- |
+| **Tipo de teste**      | Funcional / Integração                                                          |
+| **Pré-condições**      | Nenhuma                                                                         |
+| **Passos**             | 1. Acessar a página de login<br>2. Colocar as credenciais e clicar em login<br> |
+| **Resultado Esperado** | O usuário irá ser logado e levado a página de produtos                          |
+
+Evidência:
+
+<img width="592" height="374" alt="Captura de Tela 2025-11-02 às 22 17 22" src="https://github.com/user-attachments/assets/0467e8d9-caee-4e31-9343-9e2049eb67ef" />
+
+Request de login e redirecionado
+<img width="1390" height="356" alt="Captura de Tela 2025-11-02 às 22 17 04" src="https://github.com/user-attachments/assets/79a79040-15bb-4811-ad98-d531c4a9b897" />
+
+
+---
+
+**Caso de Teste 8 – Fazer Cadastro**
+
+**Objetivo:**  
+Verificar se o usuário consegue realizar o Cadastro
+
+| Item                   | Descrição                                                                              |
+| ---------------------- | -------------------------------------------------------------------------------------- |
+| **Tipo de teste**      | Funcional / Integração                                                                 |
+| **Pré-condições**      | Nenhuma                                                                                |
+| **Passos**             | 1. Acessar a página de registro<br>2. Colocar as credenciais e clicar em Registrar<br> |
+| **Resultado Esperado** | O usuário irá ser redirecionado a página de login                                      |
+
+Evidência:
+
+<img width="527" height="396" alt="Captura de Tela 2025-11-02 às 22 21 09" src="https://github.com/user-attachments/assets/f5da60e2-2954-492d-815c-a883e765f9b4" />
+
+Request e redirecionado
+<img width="1302" height="316" alt="Captura de Tela 2025-11-02 às 22 20 50" src="https://github.com/user-attachments/assets/64bcc6c1-c2a7-4cc3-a5be-d5de3cbfc0af" />
+
+
+
+
 
 
 # Referências
