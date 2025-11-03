@@ -20,8 +20,11 @@ A interface foi desenvolvida em **React**, com foco em **usabilidade e design re
 ---
 
 ### Wireframes
+#### HOME
+<img width="1024" height="1536" alt="ChatGPT Image 2 de nov  de 2025, 20_53_33" src="https://github.com/user-attachments/assets/e6789cf2-c93a-43f3-98ea-220cdc704304" />
 
-[Inclua os wireframes das páginas principais da interface, mostrando a disposição dos elementos na página.]
+##### PRODUTOS
+<img width="1024" height="1536" alt="ChatGPT Image 2 de nov  de 2025, 21_18_05" src="https://github.com/user-attachments/assets/39cefeca-9733-4384-ae61-becb8d607e89" />
 
 ---
 
@@ -242,7 +245,7 @@ Validar se, ao clicar em uma categoria (exemplo: *Eletrônicos*), o usuário é 
 |------|------------|
 | **Tipo de teste** | Funcional / Integração |
 | **Pré-condições** | Página Home carregada. Categorias listadas e clicáveis. |
-| **Passos** | 1. Acessar a página Home.<br>2. Clicar na categoria “Eletrônicos”.<br>3. Verificar o redirecionamento para a página de produtos.<br>4. Conferir se apenas produtos da categoria “Eletrônicos” estão visíveis. |
+| **Passos** | 1. Acessar a página Home.<br>2. Clicar na categoria “Hardware”.<br>3. Verificar o redirecionamento para a página de produtos.<br>4. Conferir se apenas produtos da categoria “Hardware” estão visíveis. |
 | **Resultado Esperado** | O usuário é redirecionado para a página de produtos, que exibe apenas itens da categoria selecionada. |
 
 
