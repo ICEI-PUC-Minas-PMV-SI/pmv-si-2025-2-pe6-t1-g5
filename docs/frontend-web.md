@@ -295,6 +295,8 @@ Garantir que a funcionalidade de crud de estoque e de produto funciona e está p
 Vídeo evidência do teste:
 https://github.com/user-attachments/assets/b371da78-787c-41c1-8860-66f42ee0753a
 
+
+---
 **Caso de Teste 5 – Adicionar item ao carrinho**
 
 **Objetivo:**  
@@ -311,7 +313,7 @@ Evidência:
 
 <img width="1068" height="556" alt="Captura de Tela 2025-11-02 às 22 02 28" src="https://github.com/user-attachments/assets/0611bc80-7df4-4858-8b2a-2fa40db23dcb" />
 
-
+---
 **Caso de Teste 6 – Fazer checkout do carrinho**
 
 **Objetivo:**  
