@@ -265,6 +265,20 @@ Garantir que a funcionalidade de ordenação e filtro de preço funcionem corret
 
 
 ---
+**Caso de Teste 4 – Login de admin e teste crud de itens de estoque e produtos**
+
+**Objetivo:**  
+Garantir que a funcionalidade de crud de estoque e de produto funciona e está protegida por autenticação.
+
+| Item | Descrição |
+|------|------------|
+| **Tipo de teste** | Funcional / Integração |
+| **Pré-condições** | Login com role de "Administrador" |
+| **Passos** | 1. Acessar a página de login.<br>2. Realizar operações de crud de item de estoque.<br>3. Realizar operações de crud de item de estoque.<br>4. Validar sessão via aba anônima. |
+| **Resultado Esperado** | Criação, edição e exclusão de itens de estoque e produtos após login bem sucedido. |
+
+Vídeo evidência do teste:
+https://github.com/user-attachments/assets/b371da78-787c-41c1-8860-66f42ee0753a
 
 # Referências
 
