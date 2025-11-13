@@ -14,6 +14,7 @@ O desenvolvimento faz uso de React Native Paper para acelerar a criação da int
 Os wireframes representam a organização inicial das telas e os principais elementos de interface, servindo como referência para o desenvolvimento visual e para o fluxo de navegação do usuário.
 
 ##### Homepage
+<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/3daf0117-cba4-431b-9f52-37374aba50b7" />
 
 ##### Pesquisar Produtos
 
