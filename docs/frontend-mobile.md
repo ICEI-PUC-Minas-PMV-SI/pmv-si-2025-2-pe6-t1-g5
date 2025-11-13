@@ -1,29 +1,56 @@
 # Front-end Móvel
-
-[Inclua uma breve descrição do projeto e seus objetivos.]
+Este repositório contém o desenvolvimento da interface mobile da aplicação, construída utilizando React Native com o auxílio do Expo. O objetivo desta etapa é entregar a base do aplicativo móvel, garantindo um ambiente estruturado, organizado e funcional para a evolução do projeto nas próximas fases. O foco é estabelecer uma interface inicial consistente, padronizada e alinhada às boas práticas de desenvolvimento mobile.
 
 ## Projeto da Interface
-[Descreva o projeto da interface móvel da aplicação, incluindo o design visual, layout das páginas, interações do usuário e outros aspectos relevantes.]
+A interface mobile foi projetada seguindo o kit de marca oficial da TeraBum, priorizando:
+- Identidade visual consistente
+- Experiência de uso intuitiva
+- Componentização limpa e reutilizável
+- Navegação fluida
+
+O desenvolvimento faz uso de React Native Paper para acelerar a criação da interface com padrões sólidos de design. Os testes e execução são realizados com Expo Go.
 
 ### Wireframes
+Os wireframes representam a organização inicial das telas e os principais elementos de interface, servindo como referência para o desenvolvimento visual e para o fluxo de navegação do usuário.
 
-[Inclua os wireframes das páginas principais da interface, mostrando a disposição dos elementos na página.]
+##### Homepage
+
+##### Pesquisar Produtos
+
+##### Detalhes Produtos 
+
+##### Registrar
+
+##### Login
+
+##### Estoque
+
+##### Carrinho
+
+##### Pagamento
+
+##### Confirmação de Pagamento
 
 ### Design Visual
-
-[Descreva o estilo visual da interface, incluindo paleta de cores, tipografia, ícones e outros elementos gráficos.]
+O design tem como referência o Kit de Marca TeraBum:
+![TeraBum_page-0001](https://github.com/user-attachments/assets/7d1eaa09-1dd6-4097-8eb4-8f04d4f4a80b)
 
 ## Fluxo de Dados
 
 [Diagrama ou descrição do fluxo de dados na aplicação.]
 
 ## Tecnologias Utilizadas
-
-[Lista das tecnologias principais que serão utilizadas no projeto.]
+- React Native
+- Expo / Expo CLI / Expo Go
+- TypeScript
+- React Native Paper
+- GitHub (fluxo com forks, Conventional Commits, pull requests e code review)
 
 ## Considerações de Segurança
-
-[Discuta as considerações de segurança relevantes para a aplicação distribuída, como autenticação, autorização, proteção contra ataques, etc.]
+- Camada mobile preparada para futura autenticação segura
+- Manuseio cuidadoso de estados sensíveis
+- Fluxo de versionamento estruturado para evitar inconsistências
+- Adoção de padrões que reduzem vulnerabilidades ao integrar com APIs
 
 ## Implantação
 
