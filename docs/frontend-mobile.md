@@ -37,8 +37,21 @@ O design tem como referência o Kit de Marca TeraBum:
 ![TeraBum_page-0001](https://github.com/user-attachments/assets/7d1eaa09-1dd6-4097-8eb4-8f04d4f4a80b)
 
 ## Fluxo de Dados
+O app permite navegação completa sem login. Ao abrir, verifica se há token salvo; se existir, o usuário já entra autenticado, caso contrário continua como visitante. A navegação sempre começa na Home, onde ele pode ver produtos, buscar itens e acessar o carrinho. O usuário pode adicionar produtos normalmente ao carrinho e visualizar detalhes sem precisar fazer login. A autenticação só é exigida quando ele tenta Finalizar a Compra. Nesse momento, ele é direcionado ao Login ou Cadastro. Após autenticar, retorna automaticamente ao Checkout. Com login ativo, ele prossegue para a tela de Pagamento e, ao concluir, vê a tela de Confirmação, podendo voltar à Home.
 
-[Diagrama ou descrição do fluxo de dados na aplicação.]
+```mermaid
+flowchart TD
+    Home --> SearchProducts
+    SearchProducts --> ProductDetails
+    ProductDetails --> Cart[Adicionar ao Carrinho]
+    Cart --> Checkout[Ir para Pagamento]
+    Checkout --> Logged{Usuário logado?}
+    Logged -->|Não| Login[Login / Cadastro]
+    Login --> Payment
+    Logged -->|Sim| Payment
+    Payment --> Confirm[Pedido Confirmado]
+```
+
 
 ## Tecnologias Utilizadas
 - React Native
@@ -100,7 +113,7 @@ Atualizado em: 21/04/2024
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| AlunaX        | Página inicial   | 01/02/2024     | 07/03/2024 | ✔️    | 05/02/2024      |
+| Daniela Assis | Fluxo de Dadas, Wireframes, Testes da API vitrineService no mobile e páginas Home, SearchProducts e ProductDetails | 17/11/2025 | 01/12/2025 | ✔️ | 30/11/2025      |
 | AlunaZ        | CSS unificado    | 03/02/2024     | 10/03/2024 | 📝    |                 |
 | AlunoY        | Página de login  | 01/02/2024     | 07/03/2024 | ⌛     |                 |
 | AlunoK        | Script de login  |  01/01/2024    | 12/03/2024 | ❌    |       |
