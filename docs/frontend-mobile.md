@@ -13,28 +13,57 @@ O desenvolvimento faz uso de React Native Paper para acelerar a criação da int
 ### Wireframes
 Os wireframes representam a organização inicial das telas e os principais elementos de interface, servindo como referência para o desenvolvimento visual e para o fluxo de navegação do usuário.
 
-##### Homepage
-<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/3daf0117-cba4-431b-9f52-37374aba50b7" />
+<table>
+  <tr>
+    <td align="center">
+      <strong>Home</strong><br>
+      <img src="https://github.com/user-attachments/assets/c7642ec3-86e7-43dc-bee6-a4462893b495" width="150" />
+    </td>
+    <td align="center">
+      <strong>SearchProducts</strong><br>
+      <img src="https://github.com/user-attachments/assets/1a25ddd3-d0ac-4974-8b52-46237991cbfe" width="150" />
+    </td>
+    <td align="center">
+      <strong>ProductDetails</strong><br>
+      <img src="https://github.com/user-attachments/assets/30a8c6fb-8c5d-4d11-96ed-6935002e7221" width="150" />
+    </td>
+    <td align="center">
+      <strong>Register</strong><br>
+      <img src="https://github.com/user-attachments/assets/96d82299-3f0e-4153-8870-e36fc10bd3eb" width="150" />
+    </td>
+    <td align="center">
+      <strong>Login</strong><br>
+      <img src="https://github.com/user-attachments/assets/9c97034a-e521-4ddb-9897-a754c431256c" width="150" />
+    </td>
+  </tr>
 
-##### Pesquisar Produtos
-
-##### Detalhes Produtos 
-
-##### Registrar
-
-##### Login
-
-##### Estoque
-
-##### Carrinho
-
-##### Pagamento
-
-##### Confirmação de Pagamento
+  <tr>
+    <td align="center">
+      <strong>Profile</strong><br>
+      <img src="https://github.com/user-attachments/assets/0356539a-54ab-4fff-b609-46ad7e76d15f" width="150" />
+    </td>
+    <td align="center">
+      <strong>Stock</strong><br>
+      <img src="https://github.com/user-attachments/assets/bc6a8647-0909-4e09-b693-30cf6bf24623" width="150" />
+    </td>
+    <td align="center">
+      <strong>Cart</strong><br>
+      <img src="https://github.com/user-attachments/assets/8bbae865-ec61-42f8-9a11-df27c85b497d" width="150" />
+    </td>
+    <td align="center">
+      <strong>Payment</strong><br>
+      <img src="https://github.com/user-attachments/assets/e904c4f1-ee2e-432f-99ec-a7be3e791969" width="150" />
+    </td>
+    <td align="center">
+      <strong>PaymentConfirm</strong><br>
+      <img src="https://github.com/user-attachments/assets/d485180b-1a08-41ce-832a-e644a2a558ad" width="150" />
+    </td>
+  </tr>
+</table>
 
 ### Design Visual
 O design tem como referência o Kit de Marca TeraBum:
-![TeraBum_page-0001](https://github.com/user-attachments/assets/7d1eaa09-1dd6-4097-8eb4-8f04d4f4a80b)
+![TeraBum_page-0001](https://github.com/user-attachments/assets/7d1eaa09-1dd6-4097-8eb4-8f04d4f4a80b) 
 
 ## Fluxo de Dados
 O app permite navegação completa sem login. Ao abrir, verifica se há token salvo; se existir, o usuário já entra autenticado, caso contrário continua como visitante. A navegação sempre começa na Home, onde ele pode ver produtos, buscar itens e acessar o carrinho. O usuário pode adicionar produtos normalmente ao carrinho e visualizar detalhes sem precisar fazer login. A autenticação só é exigida quando ele tenta Finalizar a Compra. Nesse momento, ele é direcionado ao Login ou Cadastro. Após autenticar, retorna automaticamente ao Checkout. Com login ativo, ele prossegue para a tela de Pagamento e, ao concluir, vê a tela de Confirmação, podendo voltar à Home.
@@ -114,6 +143,35 @@ Criação:
 Atualização:
 <img width="1752" height="924" alt="image" src="https://github.com/user-attachments/assets/10055a4e-f9c7-4787-9ae2-3949e8ec1c26" />
 
+#### **Caso de Teste — Busca de Produto na Home**
+**Objetivo:**
+Verificar se a busca funciona corretamente na Home.
+**Passos:**
+Abrir o aplicativo e acessar a Home.
+Tocar na barra de busca.
+Digitar “notebook” e confirmar a busca.
+**Resultado Esperado:**
+A lista deve exibir apenas produtos relacionados ao termo “notebook”.
+
+#### **Caso de Teste — Filtro por Categoria**
+**Objetivo:**
+Validar se o filtro de categoria funciona corretamente.
+**Passos:**
+Estar na Home.
+Tocar na categoria “Hardware”.
+**Resultado Esperado:**
+O aplicativo deve abrir a tela de produtos mostrando somente itens da categoria selecionada.
+
+#### **Caso de Teste — Ordenação e Filtro de Preço**
+**Objetivo:**
+Garantir que a ordenação e o filtro de preço funcionem adequadamente.
+**Passos:**
+Acessar a tela de Produtos.
+Selecionar a ordenação “Menor preço”.
+Definir o filtro de preço máximo em R$ 1000.
+**Resultado Esperado:**
+A lista deve mostrar apenas produtos com valor até R$ 1000, ordenados do menor para o maior preço.
+
 # Referências
 
 Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
@@ -141,7 +199,8 @@ Atualizado em: 21/04/2024
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| Daniela Assis | Fluxo de Dadas, Wireframes, Testes da API vitrineService no mobile e páginas Home, SearchProducts e ProductDetails | 17/11/2025 | 01/12/2025 | ✔️ | 30/11/2025      |
+| Daniela Assis | Fluxo de Dadas, Wireframes, Testes da API vitrineService no mobile e páginas Home, SearchProducts e ProductDetails | 17/11/2025 | 01/12/2025 | ✔️ | 01/12/2025      |
+|  Daniela Assis | Testes da API vitrineService no mobile | 17/11/2025 | 01/12/2025 | ⌛     |                 |
 | AlunaZ        | CSS unificado    | 03/02/2024     | 10/03/2024 | 📝    |                 |
 | AlunoY        | Página de login  | 01/02/2024     | 07/03/2024 | ⌛     |                 |
 | AlunoK        | Script de login  |  01/01/2024    | 12/03/2024 | ❌    |       |
