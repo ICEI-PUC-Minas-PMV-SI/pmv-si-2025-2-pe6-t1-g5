@@ -198,7 +198,7 @@ Atualizado em: 14/11/2025
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
 | Daniela Assis        | Atualização Documentação e Base Projeto Mobile | 10/11/2025     | 14/11/2025 | ✔️    | 14/11/2025      |
-| AlunaZ        | Objetivos    | 03/02/2024     | 10/02/2024 | 📝    |                 |
+| Tales Hein        | Desenvolver pagina admin no mobile   | 20/11/2025     | 30/11/2025 |  ✔️   | 30/11/2025 |
 | AlunoY        | Histórias de usuário  | 01/01/2024     | 07/01/2005 | ⌛     |                 |
 | AlunoK        | Personas 1  |    01/01/2024        | 12/02/2005 | ❌    |       |
 
