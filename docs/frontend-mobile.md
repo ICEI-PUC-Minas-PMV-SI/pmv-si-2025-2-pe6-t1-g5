@@ -95,6 +95,17 @@ Evidência:
 Acessar tela de usuário e a página de administração de estoque e produtos:
 <img width="487" height="950" alt="image" src="https://github.com/user-attachments/assets/44165fd5-5a5b-402e-abb7-e22e19cce29a" />
 
+Crud de item de estoque:
+
+Criação:
+<img width="1462" height="956" alt="image" src="https://github.com/user-attachments/assets/ebdb4efc-e440-4199-ac63-213080ec88ef" />
+
+Atualização:
+<img width="1451" height="727" alt="image" src="https://github.com/user-attachments/assets/d6cdd438-7dc5-46d0-b977-a156eda6cfb8" />
+
+Baixa de estoque:
+<img width="1653" height="848" alt="image" src="https://github.com/user-attachments/assets/5f84e71b-750a-4db9-887e-b180631ccafc" />
+
 
 # Referências
 
