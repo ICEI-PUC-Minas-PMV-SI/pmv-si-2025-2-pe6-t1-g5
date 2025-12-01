@@ -20,28 +20,43 @@ A interface foi desenvolvida em **React**, com foco em **usabilidade e design re
 ---
 
 ### Wireframes
-#### HOME
-<img width="1024" height="1536" alt="ChatGPT Image 2 de nov  de 2025, 20_53_33" src="https://github.com/user-attachments/assets/e6789cf2-c93a-43f3-98ea-220cdc704304" />
+<table>
+  <!-- Linha 1 – 3 imagens maiores -->
+  <tr>
+    <td align="center">
+      <strong>Home</strong><br>
+      <img src="https://github.com/user-attachments/assets/e6789cf2-c93a-43f3-98ea-220cdc704304" width="200" />
+    </td>
+    <td align="center">
+      <strong>Produtos</strong><br>
+      <img src="https://github.com/user-attachments/assets/39cefeca-9733-4384-ae61-becb8d607e89" width="200" />
+    </td>
+    <td align="center">
+      <strong>Carrinho</strong><br>
+      <img src="https://github.com/user-attachments/assets/7584c64c-0393-4834-b38f-2e6fda1e5983" width="200" />
+    </td>
+  </tr>
 
-##### PRODUTOS
-<img width="1024" height="1536" alt="ChatGPT Image 2 de nov  de 2025, 21_18_05" src="https://github.com/user-attachments/assets/39cefeca-9733-4384-ae61-becb8d607e89" />
-
-#### CARRINHO
-<img width="1024" height="1536" alt="ChatGPT Image 2 de nov  de 2025, 22_15_23" src="https://github.com/user-attachments/assets/7584c64c-0393-4834-b38f-2e6fda1e5983" />
-
-#### CONFERÊNCIA ANTES DO PAGAMENTO
-<img width="1024" height="1536" alt="ChatGPT Image 2 de nov  de 2025, 22_11_52" src="https://github.com/user-attachments/assets/6a795bac-c338-4d3e-8af2-af7b7773d93a" />
-
-#### LOGIN
-<img width="1024" height="1024" alt="ChatGPT Image 2 de nov  de 2025, 22_27_01" src="https://github.com/user-attachments/assets/e4d838a7-a7c9-4e50-a000-f0b6f9cd52da" />
-
-#### REGISTRAR SUA CONTA
-<img width="1024" height="1536" alt="ChatGPT Image 2 de nov  de 2025, 22_21_43" src="https://github.com/user-attachments/assets/04662cdf-cbcd-484c-99b4-62db18221461" />
-
-#### ESTOQUE
-<img width="1024" height="1536" alt="ChatGPT Image 2 de nov  de 2025, 22_18_51" src="https://github.com/user-attachments/assets/de83c164-94e3-4c59-a605-7b3f0f0e22bf" />
-
----
+  <!-- Linha 2 – 4 imagens menores -->
+  <tr>
+    <td align="center">
+      <strong>Conferência</strong><br>
+      <img src="https://github.com/user-attachments/assets/6a795bac-c338-4d3e-8af2-af7b7773d93a" width="150" />
+    </td>
+    <td align="center">
+      <strong>Login</strong><br>
+      <img src="https://github.com/user-attachments/assets/e4d838a7-a7c9-4e50-a000-f0b6f9cd52da" width="150" />
+    </td>
+    <td align="center">
+      <strong>Registrar Conta</strong><br>
+      <img src="https://github.com/user-attachments/assets/04662cdf-cbcd-484c-99b4-62db18221461" width="150" />
+    </td>
+    <td align="center">
+      <strong>Estoque</strong><br>
+      <img src="https://github.com/user-attachments/assets/de83c164-94e3-4c59-a605-7b3f0f0e22bf" width="150" />
+    </td>
+  </tr>
+</table>
 
 ### Design Visual
 <img width="4000" height="2250" alt="TeraBum-1" src="https://github.com/user-attachments/assets/0019ed26-c25a-4507-8dcb-9d520d477daa" />
