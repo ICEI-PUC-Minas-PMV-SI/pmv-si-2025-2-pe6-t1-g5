@@ -208,7 +208,7 @@ Atualizado em: 21/04/2024
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| Daniela Assis | Fluxo de Dadas, Wireframes, Testes da API vitrineService no mobile e páginas Home, SearchProducts e ProductDetails | 17/11/2025 | 01/12/2025 | ✔️ | 01/12/2025      |
+| Daniela Assis | Fluxo de Dadas, Wireframes, e páginas Home, SearchProducts e ProductDetails | 17/11/2025 | 01/12/2025 | ✔️ | 01/12/2025      |
 |  Daniela Assis | Testes da API vitrineService no mobile | 17/11/2025 | 01/12/2025 | ⌛     |                 |
 | AlunaZ        | CSS unificado    | 03/02/2024     | 10/03/2024 | 📝    |                 |
 | AlunoY        | Página de login  | 01/02/2024     | 07/03/2024 | ⌛     |                 |
