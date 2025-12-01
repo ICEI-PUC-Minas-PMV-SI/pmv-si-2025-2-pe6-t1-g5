@@ -87,7 +87,7 @@ Garantir que a funcionalidade de crud de estoque e de produto funciona e está p
 |------|------------|
 | **Tipo de teste** | Funcional / Integração |
 | **Pré-condições** | Login com role de "Administrador" |
-| **Passos** | 1. Acessar a página de usuário.<br>2. Realizar operações de crud de item de estoque.<br>3. Realizar operações de crud de item de estoque.<br> |
+| **Passos** | 1. Acessar a página de usuário.<br>2. Realizar operações de crud de item de estoque.<br>3. Realizar operações de crud de produto.<br> |
 | **Resultado Esperado** | Criação, edição e exclusão de itens de estoque e produtos após login bem sucedido. |
 
 Evidência:
