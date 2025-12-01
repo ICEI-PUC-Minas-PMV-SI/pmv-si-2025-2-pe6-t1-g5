@@ -92,6 +92,10 @@ Garantir que a funcionalidade de crud de estoque e de produto funciona e está p
 
 Evidência:
 
+Acessar tela de usuário e a página de administração de estoque e produtos:
+<img width="487" height="950" alt="image" src="https://github.com/user-attachments/assets/44165fd5-5a5b-402e-abb7-e22e19cce29a" />
+
+
 # Referências
 
 Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
