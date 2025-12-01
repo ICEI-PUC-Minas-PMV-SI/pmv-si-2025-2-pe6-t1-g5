@@ -144,31 +144,40 @@ Atualização:
 <img width="1752" height="924" alt="image" src="https://github.com/user-attachments/assets/10055a4e-f9c7-4787-9ae2-3949e8ec1c26" />
 
 #### **Caso de Teste — Busca de Produto na Home**
+
 **Objetivo:**
 Verificar se a busca funciona corretamente na Home.
+
 **Passos:**
 Abrir o aplicativo e acessar a Home.
 Tocar na barra de busca.
 Digitar “notebook” e confirmar a busca.
+
 **Resultado Esperado:**
 A lista deve exibir apenas produtos relacionados ao termo “notebook”.
 
 #### **Caso de Teste — Filtro por Categoria**
+
 **Objetivo:**
 Validar se o filtro de categoria funciona corretamente.
+
 **Passos:**
 Estar na Home.
 Tocar na categoria “Hardware”.
+
 **Resultado Esperado:**
 O aplicativo deve abrir a tela de produtos mostrando somente itens da categoria selecionada.
 
 #### **Caso de Teste — Ordenação e Filtro de Preço**
+
 **Objetivo:**
 Garantir que a ordenação e o filtro de preço funcionem adequadamente.
+
 **Passos:**
 Acessar a tela de Produtos.
 Selecionar a ordenação “Menor preço”.
 Definir o filtro de preço máximo em R$ 1000.
+
 **Resultado Esperado:**
 A lista deve mostrar apenas produtos com valor até R$ 1000, ordenados do menor para o maior preço.
 
