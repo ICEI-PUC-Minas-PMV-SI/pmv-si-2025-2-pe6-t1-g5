@@ -96,14 +96,55 @@ flowchart TD
 - Adoção de padrões que reduzem vulnerabilidades ao integrar com APIs
 
 ## Implantação
+Esta seção descreve como implantar os serviços backend da aplicação em um ambiente de produção.
 
-[Instruções para implantar a aplicação distribuída em um ambiente de produção.]
+###  1. Requisitos de Hardware e Software
+- Servidor ou ambiente em nuvem com suporte a Docker e Docker Compose (ex.: AWS, Azure, Render, DigitalOcean).
+- Banco de dados PostgreSQL (pode ser gerenciado, como Supabase ou RDS).
+- Node.js 18+ instalado (caso o deploy não utilize Docker).
+- Variáveis de ambiente configuradas (.env).
 
-1. Defina os requisitos de hardware e software necessários para implantar a aplicação em um ambiente de produção.
-2. Escolha uma plataforma de hospedagem adequada, como um provedor de nuvem ou um servidor dedicado.
-3. Configure o ambiente de implantação, incluindo a instalação de dependências e configuração de variáveis de ambiente.
-4. Faça o deploy da aplicação no ambiente escolhido, seguindo as instruções específicas da plataforma de hospedagem.
-5. Realize testes para garantir que a aplicação esteja funcionando corretamente no ambiente de produção.
+###  2. Plataforma de Hospedagem
+Recomendações adequadas para o backend:
+- Render, Railway, Fly.io, Azure Web App, AWS ECS ou DigitalOcean Droplets.
+
+Essas plataformas suportam contêineres e oferecem gerenciadores de variáveis de ambiente. 
+
+O aplicativo móvel não é implantado via Docker.Ele é distribuído via Expo, Google Play ou APK, não por servidor.
+
+###  3. Configuração do Ambiente
+- Configure variáveis de ambiente (exemplo):
+```
+DATABASE_URL=postgres://...
+JWT_SECRET=...
+SUPABASE_KEY=...
+```
+
+- Instale dependências:
+```
+npm install
+```
+- Caso utilize Docker:
+```
+docker compose up -d --build
+```
+###  4. Deploy da Aplicação
+Siga o procedimento da plataforma escolhida:
+- Com Docker: enviar Dockerfile / compose para o provedor.
+- Sem Docker: subir código para um servidor Node, instalar dependências e rodar:
+```
+npm run start
+```
+Para o mobile, o deploy é feito via Expo:
+```npx expo build:android
+npx expo build:ios
+```
+###  5. Testes Pós-Deploy
+Após a implantação:
+- Validar se o backend responde aos endpoints (/health, /api/v1/...).
+- Testar integração com banco de dados.
+- Testar fluxo completo no app Expo conectado ao backend de produção.
+- Monitorar logs e erros do servidor.
 
 ## Testes
 
@@ -209,7 +250,7 @@ Atualizado em: 21/04/2024
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
 | Daniela Assis | Fluxo de Dadas, Wireframes, e páginas Home, SearchProducts e ProductDetails | 17/11/2025 | 01/12/2025 | ✔️ | 01/12/2025      |
-|  Daniela Assis | Testes da API vitrineService no mobile | 17/11/2025 | 01/12/2025 | ⌛     |                 |
+|  Daniela Assis | Implantação (documentação) e Testes da API vitrineService no mobile | 01/12/2025 | 01/12/2025 | ✔️     |   05/12/2025  |
 | AlunaZ        | CSS unificado    | 03/02/2024     | 10/03/2024 | 📝    |                 |
 | AlunoY        | Página de login  | 01/02/2024     | 07/03/2024 | ⌛     |                 |
 | AlunoK        | Script de login  |  01/01/2024    | 12/03/2024 | ❌    |       |
