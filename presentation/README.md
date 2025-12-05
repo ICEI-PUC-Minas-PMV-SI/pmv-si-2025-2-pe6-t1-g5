@@ -13,4 +13,12 @@ Por fim, a última etapa foi o desenvolvimento do aplicativo Mobile, trazendo a 
 
 Assim, o projeto evoluiu de forma sequencial: primeiro toda a estrutura teórica e contextual, depois o backend e APIs, em seguida o desenvolvimento do Web e por último o Mobile — resultando em uma solução completa, funcional e progressivamente construída.
 
-## Vídeo Demonstrativo
+## Vídeo Demonstrativo Web
+https://github.com/user-attachments/assets/c18c1455-6ce8-488f-a8c2-16072f21a519
+
+## Vídeo Demonstrativo Mobile - Usuário Final
+https://github.com/user-attachments/assets/bfde4918-7783-457f-81d1-b57c90510597
+
+## Vídeo Demonstrativo Mobile - Administrador
+https://github.com/user-attachments/assets/f8d38045-d5c4-4353-bcd3-78e1a6fb1787
+
