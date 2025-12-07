@@ -163,74 +163,83 @@ Garantir que a funcionalidade de crud de estoque e de produto funciona e está p
 ### Evidência:
 
 Acessar tela de usuário e a página de administração de estoque e produtos:
-<img width="487" height="950" alt="image" src="https://github.com/user-attachments/assets/44165fd5-5a5b-402e-abb7-e22e19cce29a" />
+
+<img src="https://github.com/user-attachments/assets/44165fd5-5a5b-402e-abb7-e22e19cce29a" width="300" />
 
 - Crud de item de estoque:
 
 Criação:
-<img width="1462" height="956" alt="image" src="https://github.com/user-attachments/assets/ebdb4efc-e440-4199-ac63-213080ec88ef" />
+
+<img src="https://github.com/user-attachments/assets/ebdb4efc-e440-4199-ac63-213080ec88ef" width="700" />
 
 Atualização:
-<img width="1451" height="727" alt="image" src="https://github.com/user-attachments/assets/d6cdd438-7dc5-46d0-b977-a156eda6cfb8" />
+
+<img src="https://github.com/user-attachments/assets/d6cdd438-7dc5-46d0-b977-a156eda6cfb8" width="700" />
 
 Baixa de estoque:
-<img width="1653" height="848" alt="image" src="https://github.com/user-attachments/assets/5f84e71b-750a-4db9-887e-b180631ccafc" />
+
+<img src="https://github.com/user-attachments/assets/5f84e71b-750a-4db9-887e-b180631ccafc" width="700" />
 
 - Crud de produto:
 
 Criação:
-<img width="1593" height="698" alt="image" src="https://github.com/user-attachments/assets/c3569088-ba4d-489e-b80b-e7d5ba774af4" />
+
+<img src="https://github.com/user-attachments/assets/c3569088-ba4d-489e-b80b-e7d5ba774af4" width="700" />
 
 Atualização:
-<img width="1752" height="924" alt="image" src="https://github.com/user-attachments/assets/10055a4e-f9c7-4787-9ae2-3949e8ec1c26" />
 
-#### **Caso de Teste — Busca de Produto na Home**
+<img src="https://github.com/user-attachments/assets/10055a4e-f9c7-4787-9ae2-3949e8ec1c26" width="700" />
 
-**Objetivo:**
-Verificar se a busca funciona corretamente na Home.
-
-**Passos:**
-Abrir o aplicativo e acessar a Home.
-Tocar na barra de busca.
-Digitar “notebook” e confirmar a busca.
-
-**Resultado Esperado:**
-A lista deve exibir apenas produtos relacionados ao termo “notebook”.
-
-#### **Caso de Teste — Filtro por Categoria**
+#### **Caso de Teste 2 — Pesquisar por Produto**
 
 **Objetivo:**
-Validar se o filtro de categoria funciona corretamente.
+Validar se ao pesquisar por um tipo de produto na tela de Busca, o app devolve os produtos corretamente.
 
 **Passos:**
-Estar na Home.
-Tocar na categoria “Hardware”.
+Estar na tela de Busca.
+Pesquisar por um tipo de produto.
 
 **Resultado Esperado:**
-O aplicativo deve abrir a tela de produtos mostrando somente itens da categoria selecionada.
+O aplicativo deve mostrar todos os produtos que correspodem a pesquisa realizada.
 
-#### **Caso de Teste — Ordenação e Filtro de Preço**
+**Evidência:**
+
+<img src="https://github.com/user-attachments/assets/00e69ad1-9249-405d-bd2c-b39889f7298f" width="300" />
+
+#### **Caso de Teste 3 — Acessar mais Detalhes de um Produto**
 
 **Objetivo:**
-Garantir que a ordenação e o filtro de preço funcionem adequadamente.
+Visualizar com maiores detalhes um produto.
 
 **Passos:**
-Acessar a tela de Produtos.
-Selecionar a ordenação “Menor preço”.
-Definir o filtro de preço máximo em R$ 1000.
+Acessar a tela de Busca.
+Buscar por um tipo de produto.
+Selecionar o produto desejado.
+Visualizar na tela de Detalhes do Produto as características do produto selecionado.
 
 **Resultado Esperado:**
-A lista deve mostrar apenas produtos com valor até R$ 1000, ordenados do menor para o maior preço.
+A tela Detalhes do Produto oferecer maiores detalhes do produto selecionado.
+
+**Evidência:**
+
+<img src="https://github.com/user-attachments/assets/18282827-c6cd-4f41-a8ea-fbfb020460b1" width="300" />
+<img src="https://github.com/user-attachments/assets/6b861b42-e0d1-4385-af87-66558a6e41d4" width="300" />
 
 # Referências
 
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
+REACT NATIVE. Introduction to React Native. 2021. Documentação do React Native Paper.
+
+REACT NATIVE PAPER. AppBar. 2021. Documentação do React Native Paper.
+
+REACT NATIVE PAPER. Button. 2021. Documentação do React Native Paper.
+
+REACT NATIVE PAPER. Text. 2021. Documentação do React Native Paper.
+
+REACT NATIVE PAPER. TextInput. 2021. Documentação do React Native Paper.
 
 # Planejamento
 
 ##  Quadro de tarefas
-
-> Apresente a divisão de tarefas entre os membros do grupo e o acompanhamento da execução, conforme o exemplo abaixo.
 
 ### Semana 1
 
@@ -250,7 +259,7 @@ Atualizado em: 21/04/2024
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
 | Daniela Assis | Fluxo de Dadas, Wireframes, e páginas Home, SearchProducts e ProductDetails | 17/11/2025 | 01/12/2025 | ✔️ | 01/12/2025      |
-|  Daniela Assis | Implantação (documentação) e Testes da API vitrineService no mobile | 01/12/2025 | 01/12/2025 | ✔️     |   05/12/2025  |
+|  Daniela Assis | Slides, documentações da "presentation" e da parte de Implantação no frontend-mobile, e Casos de Teste 2 e 3 da API vitrineService no mobile | 01/12/2025 | 01/12/2025 | ✔️     |   05/12/2025  |
 | AlunaZ        | CSS unificado    | 03/02/2024     | 10/03/2024 | 📝    |                 |
 | AlunoY        | Página de login  | 01/02/2024     | 07/03/2024 | ⌛     |                 |
 | AlunoK        | Script de login  |  01/01/2024    | 12/03/2024 | ❌    |       |
