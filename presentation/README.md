@@ -29,11 +29,7 @@ Com base na experiência prática, identificamos alguns pontos de melhoria:
 
 Essas melhorias poderiam deixar o projeto ainda mais escalável, padronizado e preparado para evolução futura.
 
-## Quadro Visual do GitHub e Contribuições da Equipe
-
-Ao final do projeto, o quadro do GitHub Projects apresenta todas as tarefas executadas, bugs corrigidos, funcionalidades implementadas e status atualizado das entregas. O fluxo Kanban permitiu acompanhar o progresso e facilitou a divisão de trabalho entre os membros.
-
-### Responsabilidades e Atribuições da Equipe
+## Responsabilidades e Atribuições da Equipe
 
 A divisão de responsabilidades ocorreu tanto no Web quanto no Mobile:
 
