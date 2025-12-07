@@ -1,17 +1,73 @@
 # Apresentação da Solução
 
-Faça uma apresentação de um resumo de todos o processo de desenvolvimento e no final apresente a solução desenvolvida, usando um pequeno vídeo.
-
 ## O Processo de Desenvolvimento do TeraBum, um e-commerce de tecnologia
-O projeto teve início com o estudo do contexto do problema, analisando a demanda crescente por e-commerces de eletrônicos eficientes, modernos e com boa experiência de compra. A partir dessa análise, definimos a motivação do projeto, o problema central, os objetivos gerais e específicos, assim como o público-alvo e a justificativa. Também levantamos os requisitos funcionais e não funcionais que iriam orientar o desenvolvimento, estruturamos o catálogo de serviços e definimos a arquitetura, tecnologias e forma de hospedagem. Nesse momento, organizamos toda a base conceitual do sistema — o que seria construído, para quem seria feito e quais regras e limitações ele deveria atender.
+O desenvolvimento do projeto ocorreu de forma progressiva e estruturada, iniciando-se pelo estudo detalhado do contexto do problema. Analisamos a demanda crescente por e-commerces de eletrônicos eficientes, modernos e com boa experiência de compra, o que nos permitiu definir a motivação, o problema central, os objetivos gerais e específicos, o público-alvo e a justificativa. Também levantamos os requisitos funcionais e não funcionais, organizamos o catálogo de serviços e estabelecemos a arquitetura, tecnologias e forma de hospedagem. Nessa etapa, consolidamos toda a base conceitual do sistema — o que seria construído, para quem seria feito e quais regras e limitações deveriam ser atendidas.
 
-Consolidado o contexto, avançamos para a etapa das APIs, onde modelamos as entidades do banco de dados, estruturamos os microserviços e definimos os endpoints necessários para funcionamento do sistema. Nessa fase, foi documentado o papel de cada módulo (produtos, usuários, pedidos, carrinho, catálogo), assim como o fluxo de autenticação e integração com o backend. Também foram definidas as tecnologias utilizadas, a arquitetura de comunicação entre serviços, as estratégias de versionamento e a primeira visão funcional da infraestrutura, incluindo Docker, API Gateway e conexão com o banco. Essa etapa estabeleceu a base lógica do sistema e permitiu a criação dos serviços que dariam suporte às interfaces futuras.
+Com o contexto definido, avançamos para a fase de desenvolvimento das APIs, onde modelamos as entidades do banco de dados, estruturamos os microserviços e definimos os endpoints necessários para o funcionamento da aplicação. Foram documentados os módulos de Produtos, Usuários, Pedidos, Carrinho, Catálogo e Estoque, assim como o fluxo de autenticação, integração com o backend e estratégias de versionamento. Também foi definida a arquitetura de comunicação entre serviços, a análise de infraestrutura inicial com Docker e API Gateway, e a implementação do banco de dados no Supabase.
 
-Com a API estruturada, partimos para o desenvolvimento do frontend Web, criando a interface principal do e-commerce. Foram construídas as telas seguindo os requisitos levantados inicialmente: página inicial com listagem de produtos, visualização individual do item, carrinho, fluxo de compra e sistema de login/registro. A aplicação foi integrada com a API para consumo dos dados reais e configuramos o deploy contínuo, garantindo que atualizações fossem publicadas automaticamente. Essa fase também envolveu estilização, componentização, organização das rotas, testes de navegação e refinamentos de layout e usabilidade.
+Em seguida, iniciamos o desenvolvimento do frontend Web, onde foram construídas as telas de acordo com os requisitos levantados: página inicial com listagem de produtos, detalhes do produto, sistema de busca, carrinho, autenticação e fluxo de compra. A aplicação foi integrada com a API, configuramos o deploy contínuo e realizamos testes de navegação, ajustes de layout, componentização e melhorias de usabilidade.
 
-Por fim, a última etapa foi o desenvolvimento do aplicativo Mobile, trazendo a experiência do usuário para dispositivos móveis. A construção seguiu a mesma lógica do web, aproveitando a base da API e adaptando as telas para uma navegação fluida em smartphones. O app recebeu telas de autenticação, listagem de produtos, detalhes e carrinho, mantendo o foco em responsividade e experiência simplificada. Nessa fase também foram feitos ajustes de integração, testes, validação de estados e otimizações específicas para mobile.
+Na última fase, desenvolvemos o aplicativo Mobile, mantendo a mesma lógica do frontend Web e consumindo as APIs já estruturadas. Foram implementadas as telas de autenticação, listagem de produtos, detalhes, carrinho e pedidos, garantindo fluidez de navegação e adaptação ao uso em smartphones. Também realizamos testes, validações de estados, ajustes de integração e otimizações específicas para dispositivos móveis.
 
-Assim, o projeto evoluiu de forma sequencial: primeiro toda a estrutura teórica e contextual, depois o backend e APIs, em seguida o desenvolvimento do Web e por último o Mobile — resultando em uma solução completa, funcional e progressivamente construída.
+## Avaliação dos Frameworks e Tecnologias Utilizadas
+Durante o desenvolvimento, utilizamos diversas tecnologias que possibilitaram a criação de um ecossistema consistente:
+- React e React Native: proporcionaram agilidade na construção das interfaces Web e Mobile, garantindo componentização e reaproveitamento de lógica.
+- React Native Paper: facilitou a padronização visual e a construção de interfaces responsivas no mobile.
+- Node.js + APIs REST: possibilitaram um backend modular em microserviços, com endpoints bem definidos e de fácil manutenção.
+- Supabase (PostgreSQL): se mostrou uma solução eficiente para banco de dados, com boa modelagem, autenticação e integração simplificada.
+- Docker: contribuiu para padronizar ambientes e facilitar a infraestrutura inicial.
+
+No geral, os frameworks atenderam às necessidades do projeto, oferecendo boa performance e flexibilidade. Entretanto, algumas dificuldades foram observadas, como a curva de aprendizado inicial em React Native e desafios de integração entre serviços em casos específicos.
+
+## Propostas de Melhoria da Arquitetura e do Processo
+Com base na experiência prática, identificamos alguns pontos de melhoria:
+- Padronização mais rígida dos padrões de código para garantir maior uniformidade entre os microserviços.
+- Automatização de testes (unitários e de integração), que ainda foram pouco implementados na versão atual.
+- Melhor organização dos serviços no backend, incluindo documentação de erros, códigos de status e padronização de mensagens.
+- Implementação de logs estruturados e monitoramento mais robusto.
+- Adoção de CI/CD completo no mobile, que foi menos automatizado que o Web.
+
+Essas melhorias poderiam deixar o projeto ainda mais escalável, padronizado e preparado para evolução futura.
+
+## Quadro Visual do GitHub e Contribuições da Equipe
+
+Ao final do projeto, o quadro do GitHub Projects apresenta todas as tarefas executadas, bugs corrigidos, funcionalidades implementadas e status atualizado das entregas. O fluxo Kanban permitiu acompanhar o progresso e facilitou a divisão de trabalho entre os membros.
+
+### Responsabilidades e Atribuições da Equipe
+
+A divisão de responsabilidades ocorreu tanto no Web quanto no Mobile:
+
+**Lucas Guedes**
+- API: UserService
+- Telas: Login e Autenticação
+- Documentação e slides
+
+**Daniela Assis**
+- API: VitrineService
+- Telas: Home, Busca e Detalhes do Produto
+- Documentação, organização e suporte geral
+
+**Tales Hein**
+- APIs: EstoqueService, StockItems, StockMoves, Product, Warehouse
+- Telas relacionadas ao Estoque
+- Vídeo de apresentação
+
+**João Gabriel**
+- API: CartService
+- Telas de Carrinho
+- Vídeo de apresentação
+- Forte participação na integração front–API
+
+**Gabriel**
+- API: OrderService
+- Telas de Pedido e Pagamento
+- Banco de dados no Supabase
+- Destaque na comunicação entre front e backend
+
+**Todos**
+- Testes, revisão de código, integração com as APIs e contribuições gerais no GitHub.
+
+Essa divisão clara permitiu que o projeto evoluísse de forma organizada e colaborativa, garantindo que cada membro contribuísse com partes significativas do sistema.
 
 ## Vídeo Demonstrativo Web
 https://github.com/user-attachments/assets/c18c1455-6ce8-488f-a8c2-16072f21a519
